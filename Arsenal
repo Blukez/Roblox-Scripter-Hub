@@ -1,0 +1,1809 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RobloxScripterHubArsenal = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopBar = Instance.new("Folder")
+local Title = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local MainObjects = Instance.new("Folder")
+local ShadowFixer = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Tabs = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local AimbotTab = Instance.new("Frame")
+local SilentAim = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local touch_app = Instance.new("ImageButton")
+local Toggle = Instance.new("TextButton")
+local On = Instance.new("TextLabel")
+local Off = Instance.new("TextLabel")
+local WallBang = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local touch_app_2 = Instance.new("ImageButton")
+local Toggle_2 = Instance.new("TextButton")
+local On_2 = Instance.new("TextLabel")
+local Off_2 = Instance.new("TextLabel")
+local Aimbot = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local touch_app_3 = Instance.new("ImageButton")
+local Toggle_3 = Instance.new("TextButton")
+local On_3 = Instance.new("TextLabel")
+local Off_3 = Instance.new("TextLabel")
+local VisualsTab = Instance.new("Frame")
+local Esp = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local touch_app_4 = Instance.new("ImageButton")
+local Toggle_4 = Instance.new("TextButton")
+local Tracers = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local touch_app_5 = Instance.new("ImageButton")
+local Toggle_5 = Instance.new("TextButton")
+local MiscTab = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local touch_app_6 = Instance.new("ImageButton")
+local Toggle_6 = Instance.new("TextButton")
+local On_4 = Instance.new("TextLabel")
+local Off_4 = Instance.new("TextLabel")
+local Noclip = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local touch_app_7 = Instance.new("ImageButton")
+local Toggle_7 = Instance.new("TextButton")
+local On_5 = Instance.new("TextLabel")
+local Off_5 = Instance.new("TextLabel")
+local CreditsTab = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Credits_2 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local TabsMenu = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local AimbotTab_2 = Instance.new("TextButton")
+local Visuals = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local Cedits = Instance.new("TextButton")
+local Shadow = Instance.new("ImageLabel")
+
+--Properties:
+
+RobloxScripterHubArsenal.Name = "RobloxScripterHubArsenal"
+RobloxScripterHubArsenal.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RobloxScripterHubArsenal.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = RobloxScripterHubArsenal
+Main.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+Main.Position = UDim2.new(0.310234398, 0, 0.282054484, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 625, 0, 365)
+
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = Main
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0127999997, 0, 0.0191780813, 0)
+Title.Size = UDim2.new(0, 372, 0, 30)
+Title.ZIndex = 100
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Roblox Scripter Hub | Arsenal"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Logo.Name = "Logo"
+Logo.Parent = TopBar
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.0141404299, 0, 0.0198248867, 0)
+Logo.Size = UDim2.new(0, 30, 0, 30)
+Logo.ZIndex = 100
+Logo.Image = "http://www.roblox.com/asset/?id=7553453866"
+
+MainObjects.Name = "MainObjects"
+MainObjects.Parent = Main
+
+ShadowFixer.Name = "ShadowFixer"
+ShadowFixer.Parent = Main
+ShadowFixer.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+ShadowFixer.Size = UDim2.new(0, 625, 0, 364)
+
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = ShadowFixer
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Main
+Tabs.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Tabs.Position = UDim2.new(0.0223999992, 0, 0.254794508, 0)
+Tabs.Size = UDim2.new(0, 597, 0, 259)
+Tabs.ZIndex = 2
+
+UICorner_3.Parent = Tabs
+
+AimbotTab.Name = "AimbotTab"
+AimbotTab.Parent = Tabs
+AimbotTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotTab.BackgroundTransparency = 1.000
+AimbotTab.Size = UDim2.new(0, 597, 0, 259)
+AimbotTab.Visible = false
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = AimbotTab
+SilentAim.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SilentAim.Position = UDim2.new(0.012000002, 0, 0.0310000498, 0)
+SilentAim.Size = UDim2.new(0, 582, 0, 32)
+SilentAim.ZIndex = 10
+SilentAim.Font = Enum.Font.SourceSans
+SilentAim.Text = "       Silent Aim"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 25.000
+SilentAim.TextWrapped = true
+SilentAim.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = SilentAim
+
+touch_app.Name = "touch_app"
+touch_app.Parent = SilentAim
+touch_app.BackgroundTransparency = 1.000
+touch_app.LayoutOrder = 9
+touch_app.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app.Size = UDim2.new(0, 20, 0, 20)
+touch_app.ZIndex = 2
+touch_app.Image = "rbxassetid://3926305904"
+touch_app.ImageRectOffset = Vector2.new(84, 204)
+touch_app.ImageRectSize = Vector2.new(36, 36)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = SilentAim
+Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.BackgroundTransparency = 1.000
+Toggle.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle.Size = UDim2.new(0, 39, 0, 26)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextSize = 14.000
+
+On.Name = "On"
+On.Parent = Toggle
+On.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On.BackgroundTransparency = 1.000
+On.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On.Size = UDim2.new(0, 39, 0, 27)
+On.Visible = false
+On.Font = Enum.Font.SourceSans
+On.Text = "On"
+On.TextColor3 = Color3.fromRGB(85, 255, 0)
+On.TextScaled = true
+On.TextSize = 14.000
+On.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On.TextWrapped = true
+
+Off.Name = "Off"
+Off.Parent = Toggle
+Off.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off.BackgroundTransparency = 1.000
+Off.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off.Size = UDim2.new(0, 39, 0, 27)
+Off.Font = Enum.Font.SourceSans
+Off.Text = "Off"
+Off.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off.TextScaled = true
+Off.TextSize = 14.000
+Off.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off.TextWrapped = true
+
+WallBang.Name = "WallBang"
+WallBang.Parent = AimbotTab
+WallBang.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WallBang.Position = UDim2.new(0.012000002, 0, 0.189301208, 0)
+WallBang.Size = UDim2.new(0, 582, 0, 32)
+WallBang.ZIndex = 10
+WallBang.Font = Enum.Font.SourceSans
+WallBang.Text = "       Wall Bang"
+WallBang.TextColor3 = Color3.fromRGB(255, 255, 255)
+WallBang.TextSize = 25.000
+WallBang.TextWrapped = true
+WallBang.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.Parent = WallBang
+
+touch_app_2.Name = "touch_app"
+touch_app_2.Parent = WallBang
+touch_app_2.BackgroundTransparency = 1.000
+touch_app_2.LayoutOrder = 9
+touch_app_2.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_2.Size = UDim2.new(0, 20, 0, 20)
+touch_app_2.ZIndex = 2
+touch_app_2.Image = "rbxassetid://3926305904"
+touch_app_2.ImageRectOffset = Vector2.new(84, 204)
+touch_app_2.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = WallBang
+Toggle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_2.BackgroundTransparency = 1.000
+Toggle_2.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_2.Size = UDim2.new(0, 39, 0, 26)
+Toggle_2.Font = Enum.Font.SourceSans
+Toggle_2.Text = ""
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextSize = 14.000
+
+On_2.Name = "On"
+On_2.Parent = Toggle_2
+On_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_2.BackgroundTransparency = 1.000
+On_2.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_2.Size = UDim2.new(0, 39, 0, 27)
+On_2.Visible = false
+On_2.Font = Enum.Font.SourceSans
+On_2.Text = "On"
+On_2.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_2.TextScaled = true
+On_2.TextSize = 14.000
+On_2.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_2.TextWrapped = true
+
+Off_2.Name = "Off"
+Off_2.Parent = Toggle_2
+Off_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_2.BackgroundTransparency = 1.000
+Off_2.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_2.Size = UDim2.new(0, 39, 0, 27)
+Off_2.Font = Enum.Font.SourceSans
+Off_2.Text = "Off"
+Off_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_2.TextScaled = true
+Off_2.TextSize = 14.000
+Off_2.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_2.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = AimbotTab
+Aimbot.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Aimbot.Position = UDim2.new(0.012000002, 0, 0.347602367, 0)
+Aimbot.Size = UDim2.new(0, 582, 0, 32)
+Aimbot.ZIndex = 10
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "       Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 25.000
+Aimbot.TextWrapped = true
+Aimbot.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.Parent = Aimbot
+
+touch_app_3.Name = "touch_app"
+touch_app_3.Parent = Aimbot
+touch_app_3.BackgroundTransparency = 1.000
+touch_app_3.LayoutOrder = 9
+touch_app_3.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_3.Size = UDim2.new(0, 20, 0, 20)
+touch_app_3.ZIndex = 2
+touch_app_3.Image = "rbxassetid://3926305904"
+touch_app_3.ImageRectOffset = Vector2.new(84, 204)
+touch_app_3.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = Aimbot
+Toggle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_3.BackgroundTransparency = 1.000
+Toggle_3.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_3.Size = UDim2.new(0, 39, 0, 26)
+Toggle_3.Font = Enum.Font.SourceSans
+Toggle_3.Text = ""
+Toggle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_3.TextSize = 14.000
+
+On_3.Name = "On"
+On_3.Parent = Toggle_3
+On_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_3.BackgroundTransparency = 1.000
+On_3.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_3.Size = UDim2.new(0, 39, 0, 27)
+On_3.Visible = false
+On_3.Font = Enum.Font.SourceSans
+On_3.Text = "On"
+On_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_3.TextScaled = true
+On_3.TextSize = 14.000
+On_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_3.TextWrapped = true
+
+Off_3.Name = "Off"
+Off_3.Parent = Toggle_3
+Off_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_3.BackgroundTransparency = 1.000
+Off_3.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_3.Size = UDim2.new(0, 39, 0, 27)
+Off_3.Font = Enum.Font.SourceSans
+Off_3.Text = "Off"
+Off_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_3.TextScaled = true
+Off_3.TextSize = 14.000
+Off_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_3.TextWrapped = true
+
+VisualsTab.Name = "VisualsTab"
+VisualsTab.Parent = Tabs
+VisualsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualsTab.BackgroundTransparency = 1.000
+VisualsTab.Size = UDim2.new(0, 597, 0, 259)
+VisualsTab.Visible = false
+
+Esp.Name = "Esp"
+Esp.Parent = VisualsTab
+Esp.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Esp.Position = UDim2.new(0.0136750434, 0, 0.0348610543, 0)
+Esp.Size = UDim2.new(0, 582, 0, 32)
+Esp.ZIndex = 10
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "       ESP"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 25.000
+Esp.TextWrapped = true
+Esp.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_7.Parent = Esp
+
+touch_app_4.Name = "touch_app"
+touch_app_4.Parent = Esp
+touch_app_4.BackgroundTransparency = 1.000
+touch_app_4.LayoutOrder = 9
+touch_app_4.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_4.Size = UDim2.new(0, 20, 0, 20)
+touch_app_4.ZIndex = 2
+touch_app_4.Image = "rbxassetid://3926305904"
+touch_app_4.ImageRectOffset = Vector2.new(84, 204)
+touch_app_4.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_4.Name = "Toggle"
+Toggle_4.Parent = Esp
+Toggle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_4.BackgroundTransparency = 1.000
+Toggle_4.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_4.Size = UDim2.new(0, 39, 0, 26)
+Toggle_4.Font = Enum.Font.SourceSans
+Toggle_4.Text = ""
+Toggle_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_4.TextSize = 14.000
+
+Tracers.Name = "Tracers"
+Tracers.Parent = VisualsTab
+Tracers.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Tracers.Position = UDim2.new(0.0136750434, 0, 0.193162218, 0)
+Tracers.Size = UDim2.new(0, 582, 0, 32)
+Tracers.ZIndex = 10
+Tracers.Font = Enum.Font.SourceSans
+Tracers.Text = "       Tracers"
+Tracers.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tracers.TextSize = 25.000
+Tracers.TextWrapped = true
+Tracers.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_8.Parent = Tracers
+
+touch_app_5.Name = "touch_app"
+touch_app_5.Parent = Tracers
+touch_app_5.BackgroundTransparency = 1.000
+touch_app_5.LayoutOrder = 9
+touch_app_5.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_5.Size = UDim2.new(0, 20, 0, 20)
+touch_app_5.ZIndex = 2
+touch_app_5.Image = "rbxassetid://3926305904"
+touch_app_5.ImageRectOffset = Vector2.new(84, 204)
+touch_app_5.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_5.Name = "Toggle"
+Toggle_5.Parent = Tracers
+Toggle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_5.BackgroundTransparency = 1.000
+Toggle_5.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_5.Size = UDim2.new(0, 39, 0, 26)
+Toggle_5.Font = Enum.Font.SourceSans
+Toggle_5.Text = ""
+Toggle_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_5.TextSize = 14.000
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Tabs
+MiscTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscTab.BackgroundTransparency = 1.000
+MiscTab.Size = UDim2.new(0, 597, 0, 259)
+MiscTab.Visible = false
+
+Fly.Name = "Fly"
+Fly.Parent = MiscTab
+Fly.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Fly.Position = UDim2.new(0.012000002, 0, 0.0310000498, 0)
+Fly.Size = UDim2.new(0, 582, 0, 32)
+Fly.ZIndex = 10
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "       Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 25.000
+Fly.TextWrapped = true
+Fly.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_9.Parent = Fly
+
+touch_app_6.Name = "touch_app"
+touch_app_6.Parent = Fly
+touch_app_6.BackgroundTransparency = 1.000
+touch_app_6.LayoutOrder = 9
+touch_app_6.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_6.Size = UDim2.new(0, 20, 0, 20)
+touch_app_6.ZIndex = 2
+touch_app_6.Image = "rbxassetid://3926305904"
+touch_app_6.ImageRectOffset = Vector2.new(84, 204)
+touch_app_6.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_6.Name = "Toggle"
+Toggle_6.Parent = Fly
+Toggle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_6.BackgroundTransparency = 1.000
+Toggle_6.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_6.Size = UDim2.new(0, 39, 0, 26)
+Toggle_6.Font = Enum.Font.SourceSans
+Toggle_6.Text = ""
+Toggle_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_6.TextSize = 14.000
+
+On_4.Name = "On"
+On_4.Parent = Toggle_6
+On_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_4.BackgroundTransparency = 1.000
+On_4.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_4.Size = UDim2.new(0, 39, 0, 27)
+On_4.Visible = false
+On_4.Font = Enum.Font.SourceSans
+On_4.Text = "On"
+On_4.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_4.TextScaled = true
+On_4.TextSize = 14.000
+On_4.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_4.TextWrapped = true
+
+Off_4.Name = "Off"
+Off_4.Parent = Toggle_6
+Off_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_4.BackgroundTransparency = 1.000
+Off_4.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_4.Size = UDim2.new(0, 39, 0, 27)
+Off_4.Font = Enum.Font.SourceSans
+Off_4.Text = "Off"
+Off_4.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_4.TextScaled = true
+Off_4.TextSize = 14.000
+Off_4.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_4.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = MiscTab
+Noclip.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Noclip.Position = UDim2.new(0.0136750434, 0, 0.189301208, 0)
+Noclip.Size = UDim2.new(0, 582, 0, 32)
+Noclip.ZIndex = 10
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "       Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 25.000
+Noclip.TextWrapped = true
+Noclip.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_10.Parent = Noclip
+
+touch_app_7.Name = "touch_app"
+touch_app_7.Parent = Noclip
+touch_app_7.BackgroundTransparency = 1.000
+touch_app_7.LayoutOrder = 9
+touch_app_7.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_7.Size = UDim2.new(0, 20, 0, 20)
+touch_app_7.ZIndex = 2
+touch_app_7.Image = "rbxassetid://3926305904"
+touch_app_7.ImageRectOffset = Vector2.new(84, 204)
+touch_app_7.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_7.Name = "Toggle"
+Toggle_7.Parent = Noclip
+Toggle_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_7.BackgroundTransparency = 1.000
+Toggle_7.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_7.Size = UDim2.new(0, 39, 0, 26)
+Toggle_7.Font = Enum.Font.SourceSans
+Toggle_7.Text = ""
+Toggle_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_7.TextSize = 14.000
+
+On_5.Name = "On"
+On_5.Parent = Toggle_7
+On_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_5.BackgroundTransparency = 1.000
+On_5.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_5.Size = UDim2.new(0, 39, 0, 27)
+On_5.Visible = false
+On_5.Font = Enum.Font.SourceSans
+On_5.Text = "On"
+On_5.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_5.TextScaled = true
+On_5.TextSize = 14.000
+On_5.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_5.TextWrapped = true
+
+Off_5.Name = "Off"
+Off_5.Parent = Toggle_7
+Off_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_5.BackgroundTransparency = 1.000
+Off_5.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_5.Size = UDim2.new(0, 39, 0, 27)
+Off_5.Font = Enum.Font.SourceSans
+Off_5.Text = "Off"
+Off_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_5.TextScaled = true
+Off_5.TextSize = 14.000
+Off_5.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_5.TextWrapped = true
+
+CreditsTab.Name = "CreditsTab"
+CreditsTab.Parent = Tabs
+CreditsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTab.BackgroundTransparency = 1.000
+CreditsTab.Size = UDim2.new(0, 597, 0, 259)
+
+Credits.Name = "Credits"
+Credits.Parent = CreditsTab
+Credits.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Credits.Position = UDim2.new(0.0134002864, 0, 0.0347490236, 0)
+Credits.Size = UDim2.new(0, 582, 0, 32)
+Credits.ZIndex = 10
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "   Powered By RobloxScripter.com"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 25.000
+Credits.TextWrapped = true
+Credits.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_11.Parent = Credits
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = CreditsTab
+Credits_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Credits_2.Position = UDim2.new(0.0134002864, 0, 0.193050161, 0)
+Credits_2.Size = UDim2.new(0, 582, 0, 32)
+Credits_2.ZIndex = 10
+Credits_2.Font = Enum.Font.SourceSans
+Credits_2.Text = "   Made by Blukez"
+Credits_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits_2.TextSize = 25.000
+Credits_2.TextWrapped = true
+Credits_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_12.Parent = Credits_2
+
+TabsMenu.Name = "TabsMenu"
+TabsMenu.Parent = Main
+TabsMenu.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TabsMenu.Position = UDim2.new(0.0223999992, 0, 0.12602739, 0)
+TabsMenu.Size = UDim2.new(0, 597, 0, 34)
+TabsMenu.ZIndex = 10
+
+UICorner_13.Parent = TabsMenu
+
+AimbotTab_2.Name = "AimbotTab"
+AimbotTab_2.Parent = TabsMenu
+AimbotTab_2.BackgroundColor3 = Color3.fromRGB(207, 207, 207)
+AimbotTab_2.BackgroundTransparency = 1.000
+AimbotTab_2.Position = UDim2.new(0.0100502511, 0, 0.0654099435, 0)
+AimbotTab_2.Size = UDim2.new(0, 83, 0, 28)
+AimbotTab_2.Font = Enum.Font.SourceSans
+AimbotTab_2.Text = "Aimbot"
+AimbotTab_2.TextColor3 = Color3.fromRGB(207, 207, 207)
+AimbotTab_2.TextScaled = true
+AimbotTab_2.TextSize = 14.000
+AimbotTab_2.TextWrapped = true
+
+Visuals.Name = "Visuals"
+Visuals.Parent = TabsMenu
+Visuals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visuals.BackgroundTransparency = 1.000
+Visuals.Position = UDim2.new(0.149078727, 0, 0.0654099435, 0)
+Visuals.Size = UDim2.new(0, 79, 0, 28)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(207, 207, 207)
+Visuals.TextScaled = true
+Visuals.TextSize = 14.000
+Visuals.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = TabsMenu
+Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Misc.BackgroundTransparency = 1.000
+Misc.Position = UDim2.new(0.281407028, 0, 0.0654099435, 0)
+Misc.Size = UDim2.new(0, 52, 0, 28)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(207, 207, 207)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+Cedits.Name = "Cedits"
+Cedits.Parent = TabsMenu
+Cedits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cedits.BackgroundTransparency = 1.000
+Cedits.Position = UDim2.new(0.368509203, 0, 0.0654099435, 0)
+Cedits.Size = UDim2.new(0, 79, 0, 28)
+Cedits.Font = Enum.Font.SourceSans
+Cedits.Text = "Credits"
+Cedits.TextColor3 = Color3.fromRGB(207, 207, 207)
+Cedits.TextScaled = true
+Cedits.TextSize = 14.000
+Cedits.TextWrapped = true
+
+Shadow.Name = "Shadow"
+Shadow.Parent = Main
+Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shadow.BackgroundTransparency = 1.000
+Shadow.Position = UDim2.new(-0.0463999994, 0, -0.312328756, 0)
+Shadow.Size = UDim2.new(0, 683, 0, 591)
+Shadow.ZIndex = -999
+Shadow.Image = "rbxassetid://3523728077"
+Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+-- Scripts:
+
+local function OUNM_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local SilentAimToggled = false
+	
+	script.Parent.Parent.Parent.SilentAim.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			SilentAimToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			SilentAimToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+		
+		wait()
+		
+		if SilentAimToggled == true then
+			local CurrentCamera = workspace.CurrentCamera
+			local Players = game.GetService(game, "Players")
+			local LocalPlayer = Players.LocalPlayer
+			local Mouse = LocalPlayer:GetMouse()
+			function ClosestPlayer()
+				local MaxDist, Closest = math.huge
+				for I,V in pairs(Players.GetPlayers(Players)) do
+					if V == LocalPlayer then continue end
+					if V.Team == LocalPlayer then continue end
+					if not V.Character then continue end
+					local Head = V.Character.FindFirstChild(V.Character, "Head")
+					if not Head then continue end
+					local Pos, Vis = CurrentCamera.WorldToScreenPoint(CurrentCamera, Head.Position)
+					if not Vis then continue end
+					local MousePos, TheirPos = Vector2.new(Mouse.X, Mouse.Y), Vector2.new(Pos.X, Pos.Y)
+					local Dist = (TheirPos - MousePos).Magnitude
+					if Dist < MaxDist then
+						MaxDist = Dist
+						Closest = V
+						print("working")
+					end
+				end
+				return Closest
+			end
+			local MT = getrawmetatable(game)
+			local OldNC = MT.__namecall
+			local OldIDX = MT.__index
+			setreadonly(MT, false)
+			MT.__namecall = newcclosure(function(self, ...)
+				local Args, Method = {...}, getnamecallmethod()
+				if Method == "FindPartOnRayWithIgnoreList" and not checkcaller() then
+					local CP = ClosestPlayer()
+					if CP and CP.Character and CP.Character.FindFirstChild(CP.Character, "Head") then
+						Args[1] = Ray.new(CurrentCamera.CFrame.Position, (CP.Character.Head.Position - CurrentCamera.CFrame.Position).Unit * 1000)
+						return OldNC(self, unpack(Args))
+					end
+				end
+				return OldNC(self, ...)
+			end)
+			MT.__index = newcclosure(function(self, K)
+				if K == "Clips" then
+					return workspace.Map
+				end
+				return OldIDX(self, K)
+			end)
+			setreadonly(MT, true)
+		end
+		
+		if SilentAimToggled == false then
+			
+		end
+	end)
+end
+coroutine.wrap(OUNM_fake_script)()
+local function RETG_fake_script() -- Toggle_2.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_2)
+
+	local WallBangToggled = false
+	
+	script.Parent.Parent.Parent.WallBang.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			WallBangToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			WallBangToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+		
+		wait()
+		
+		if WallBangToggled == true then
+			_G.Enable = true
+		end
+		
+		if WallBangToggled == false then
+			_G.Enable = not _G.Enable
+		end
+		
+		local MT = getrawmetatable(game)
+		local OldIndex = MT.__index
+		setreadonly(MT, false)
+		MT.__index = newcclosure(function(A, B)
+			if B == "Clips" then
+				if _G.Enable then
+					return workspace.Map
+				end
+			end
+			return OldIndex(A, B)
+		end)
+	end)
+end
+coroutine.wrap(RETG_fake_script)()
+local function SVDQG_fake_script() -- Toggle_3.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_3)
+
+	local AimbotToggled = false
+	
+	script.Parent.Parent.Parent.Aimbot.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			AimbotToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			AimbotToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+		
+		wait()
+		
+		if AimbotToggled == true then
+		   aimbotting = true
+		end
+		
+		if AimbotToggled == false then
+			aimbotting = false
+		end
+		
+		local safe = setmetatable({}, {
+			__index = function(_, k)
+				return game:GetService(k)
+			end
+		})
+	
+		local movethemouse = mousemoverel or Input.MoveMouse --Mouse Move Function.
+		local leftclickme = nil --Auto Shoot Key Press Thingy.
+		local aimbotting = false -- Toggles.
+		local autoshoot = false
+		local teamcheck = false
+		local visiblecheck = true
+		_G.xaimoffset = 0 --_G.xaimoffset = -25
+		_G.maxdistfromcross = 100
+	
+		local cam = safe.Workspace.CurrentCamera -- Current Camera
+		local lp = safe.Players.LocalPlayer -- Local Player
+		local lpc = safe.Players.LocalPlayer.Character -- Local Player Character
+	
+		local wtos = function(v) -- World To Screen
+			return cam:WorldToScreenPoint(v)
+		end
+	
+		local distFromCenter = function(x, y)
+			local vps = cam.ViewportSize -- Get ViewPortSize.
+			local vpsx = vps.X
+			local vpsy = vps.Y
+			local screencenterx = vpsx/2
+			local screencentery = vpsy/2
+			local xdist = (x - screencenterx) -- X Distance From Mid Screen.
+			local ydist = (y - screencentery) -- Y Distance From Mid Screen.
+			local Hypotenuse = math.sqrt(math.pow(xdist, 2) + math.pow(ydist, 2))
+			return Hypotenuse
+		end
+	
+		local function inlos(p, ...) -- In line of site?
+			return #cam:GetPartsObscuringTarget({p}, {cam, lp.Character, ...}) == 0
+		end
+	
+		local getclosestPlayer = function() -- Checks the closest player based on Hypotenuse.
+			local plrs, v = safe.Players:GetPlayers()
+			local maxdist = 75
+			local dist = math.huge
+			local plr = "none"
+			for i = 1, #plrs do
+				v = plrs[i]
+				if v ~= safe.Players.LocalPlayer then
+					if v.Character then
+						if v.TeamColor ~= safe.Players.LocalPlayer.TeamColor and teamcheck then
+							local hpos = wtos(v.Character.Head.Position)
+							local idist = distFromCenter(hpos.X, hpos.Y)
+							if idist < dist and idist < _G.maxdistfromcross then
+								dist = idist
+								plr = v
+							end
+						elseif not teamcheck then
+							local hpos = wtos(v.Character.Head.Position)
+							local idist = distFromCenter(hpos.X, hpos.Y)
+							if idist < dist and idist < _G.maxdistfromcross then
+								dist = idist
+								plr = v
+							end
+						end
+					end
+				end
+			end
+			return plr, dist
+		end
+	
+		local AimAt = function(x, y)
+			local vps = cam.ViewportSize
+			local vpsx = vps.X
+			local vpsy = vps.Y
+			local screencenterx = vpsx/2
+			local screencentery = vpsy/2
+			local aimspeed = 5
+			local aimatx
+			local aimaty
+	
+			if x ~= 0 then
+				if x > screencenterx then
+					aimatx = -(screencenterx - x)
+					aimatx = aimatx/aimspeed
+					if aimatx + screencenterx > screencenterx * 2 then
+						aimatx = 0
+					end
+				end
+				if x < screencenterx then
+					aimatx = x - screencenterx
+					aimatx = aimatx/aimspeed
+					if aimatx + screencenterx < 0 then
+						aimatx = 0
+					end
+				end
+			end
+	
+			if y ~= 0 then
+				if y > screencentery then
+					aimaty = -(screencentery - y)
+					aimaty = aimaty/aimspeed
+					if aimaty + screencentery > screencentery * 2 then
+						aimaty = 0
+					end
+				end
+				if y < screencentery then
+					aimaty = y - screencentery
+					aimaty = aimaty/aimspeed
+					if aimaty + screencentery < 0 then
+						aimaty = 0
+					end
+				end
+			end
+			return aimatx, aimaty
+		end
+	
+		local MouseTests = function()
+			local player = safe.Players.LocalPlayer
+			local mouse = player:GetMouse()
+			local screensizex = mouse.ViewSizeX
+			local screensizey = mouse.ViewSizeY
+			local midx = screensizex/2
+			local midy = screensizey/2
+			local mousex = mouse.X
+			local mousey = mouse.Y
+			local moveamountx = midx - mousex
+			local moveamounty = midy - mousey
+			movethemouse(moveamountx, moveamounty)
+			local camera = safe.Workspace.Camera
+			local newmousex = safe.Players.LocalPlayer:GetMouse().X
+			local newmousey = safe.Players.LocalPlayer:GetMouse().Y
+			local closestplayer = getclosestPlayer()
+			if player.Character.Humanoid.Health > 0 then
+				if closestplayer ~= "none" then
+					if inlos(closestplayer.Character.Head.Position, closestplayer.Character) and visiblecheck then
+						local closesthead = closestplayer.Character.Head
+						local p = camera:WorldToScreenPoint(closesthead.Position)
+						local xdistancetohead, ydistancetohead = AimAt(p.X + _G.xaimoffset, p.Y + 32)
+						movethemouse(xdistancetohead, ydistancetohead)
+						if autoshoot then
+							movethemouse(xdistancetohead, ydistancetohead)
+							wait(1)
+							Input.LeftClick(MOUSE_DOWN)
+							wait()
+						end
+					elseif not visiblecheck then
+						local closesthead = closestplayer.Character.Head
+						local p = camera:WorldToScreenPoint(closesthead.Position)
+						local xdistancetohead, ydistancetohead = AimAt(p.X + _G.xaimoffset, p.Y + 32)
+						movethemouse(xdistancetohead, ydistancetohead)
+					end
+				end
+			end
+		end
+	
+		game:GetService('RunService').Stepped:connect(function()
+			if aimbotting then
+				--MouseTests()
+			end
+		end)
+	
+	
+		local plr = safe.Players.LocalPlayer
+		local mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+			if key == "/////" then
+				aimbotting = not aimbotting
+				print("Aimbotting: " .. tostring(aimbotting))
+				MouseTests()
+			end
+	
+			if key == "m" then
+				teamcheck = not teamcheck
+				print("Team Check: " .. tostring(teamcheck))
+			end
+		end)
+	
+	
+	
+	
+		MB2Held = false
+	
+		function onKeyPress(inputObject,gameProcessed)
+			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
+				MB2Held = true
+				while MB2Held do
+					if aimbotting then
+						MouseTests()
+					end
+					wait()
+				end
+			end
+		end
+	
+		function onKeyRelease(inputObject,gameProcessed)
+			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
+				MB2Held = false
+			end
+		end
+	
+		game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+		game:GetService("UserInputService").InputEnded:connect(onKeyRelease)
+	end)
+end
+coroutine.wrap(SVDQG_fake_script)()
+local function ZRDC_fake_script() -- Toggle_4.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_4)
+
+	script.Parent.Parent.Parent.Esp.MouseButton1Click:Connect(function()
+		-- Made by Blissful#4992
+		local Player = game:GetService("Players").LocalPlayer
+		local Camera = game:GetService("Workspace").CurrentCamera
+		local Mouse = Player:GetMouse()
+	
+		local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
+			return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
+		end
+	
+		local function GetClosest(points, dest)
+			local min  = math.huge 
+			local closest = nil
+			for _,v in pairs(points) do
+				local dist = Dist(v, dest)
+				if dist < min then
+					min = dist
+					closest = v
+				end
+			end
+			return closest
+		end
+	
+		local function DrawESP(plr)
+			local Box = Drawing.new("Quad")
+			Box.Visible = false
+			Box.PointA = Vector2.new(0, 0)
+			Box.PointB = Vector2.new(0, 0)
+			Box.PointC = Vector2.new(0, 0)
+			Box.PointD = Vector2.new(0, 0)
+			Box.Color = Color3.fromRGB(255, 255, 255)
+			Box.Thickness = 2
+			Box.Transparency = 1
+	
+			local function Update()
+				local c
+				c = game:GetService("RunService").RenderStepped:Connect(function()
+					if plr.Character ~= nil and plr.Character:FindFirstChildOfClass("Humanoid") ~= nil and plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and plr.Character:FindFirstChildOfClass("Humanoid").Health > 0 and plr.Character:FindFirstChild("Head") ~= nil then
+						local pos, vis = Camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+						if vis then 
+							local points = {}
+							local c = 0
+							for _,v in pairs(plr.Character:GetChildren()) do
+								if v:IsA("BasePart") then
+									c = c + 1
+									local p = Camera:WorldToViewportPoint(v.Position)
+									if v.Name == "HumanoidRootPart" then
+										p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, 0, -v.Size.Z)).p)
+									elseif v.Name == "Head" then
+										p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(0, v.Size.Y/2, v.Size.Z/1.25)).p)
+									elseif string.match(v.Name, "Left") then
+										p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(-v.Size.X/2, 0, 0)).p)
+									elseif string.match(v.Name, "Right") then
+										p = Camera:WorldToViewportPoint((v.CFrame * CFrame.new(v.Size.X/2, 0, 0)).p)
+									end
+									points[c] = p
+								end
+							end
+							local Left = GetClosest(points, Vector2.new(0, pos.Y))
+							local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
+							local Top = GetClosest(points, Vector2.new(pos.X, 0))
+							local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
+	
+							if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
+								Box.PointA = Vector2.new(Right.X, Top.Y)
+								Box.PointB = Vector2.new(Left.X, Top.Y)
+								Box.PointC = Vector2.new(Left.X, Bottom.Y)
+								Box.PointD = Vector2.new(Right.X, Bottom.Y)
+	
+								Box.Visible = true
+							else 
+								Box.Visible = false
+							end
+						else 
+							Box.Visible = false
+						end
+					else
+						Box.Visible = false
+						if game.Players:FindFirstChild(plr.Name) == nil then
+							c:Disconnect()
+						end
+					end
+				end)
+			end
+			coroutine.wrap(Update)()
+		end
+	
+		for _,v in pairs(game:GetService("Players"):GetChildren()) do
+			if v.Name ~= Player.Name then 
+				DrawESP(v)
+			end
+		end
+	
+		game:GetService("Players").PlayerAdded:Connect(function(v)
+			DrawESP(v)
+		end)
+	end)
+end
+coroutine.wrap(ZRDC_fake_script)()
+local function WGHKI_fake_script() -- Toggle_5.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_5)
+
+	script.Parent.Parent.Parent.Tracers.MouseButton1Click:Connect(function()
+		local function API_Check()
+			if Drawing == nil then
+				return "No"
+			else
+				return "Yes"
+			end
+		end
+	
+		local Find_Required = API_Check()
+	
+		if Find_Required == "No" then
+			game:GetService("StarterGui"):SetCore("SendNotification",{
+				Title = "Exunys Developer";
+				Text = "Tracer script could not be loaded because your exploit is unsupported.";
+				Duration = math.huge;
+				Button1 = "OK"
+			})
+	
+			return
+		end
+	
+		local RunService = game:GetService("RunService")
+		local Players = game:GetService("Players")
+		local Camera = game:GetService("Workspace").CurrentCamera
+		local UserInputService = game:GetService("UserInputService")
+		local TestService = game:GetService("TestService")
+	
+		local Typing = false
+	
+		_G.SendNotifications = false   -- If set to true then the script would notify you frequently on any changes applied and when loaded / errored. (If a game can detect this, it is recommended to set it to false)
+		_G.DefaultSettings = false   -- If set to true then the tracer script would run with default settings regardless of any changes you made.
+	
+		_G.TeamCheck = false   -- If set to true then the script would create tracers only for the enemy team members.
+	
+		--[!]-- ONLY ONE OF THESE VALUES SHOULD BE SET TO TRUE TO NOT ERROR THE SCRIPT --[!]--
+	
+		_G.FromMouse = false   -- If set to true, the tracers will come from the position of your mouse curson on your screen.
+		_G.FromCenter = false   -- If set to true, the tracers will come from the center of your screen.
+		_G.FromBottom = true   -- If set to true, the tracers will come from the bottom of your screen.
+	
+		_G.TracersVisible = true   -- If set to true then the tracers will be visible and vice versa.
+		_G.TracerColor = Color3.fromRGB(255, 80, 10)   -- The color that the tracers would appear as.
+		_G.TracerThickness = 1   -- The thickness of the tracers.
+		_G.TracerTransparency = 0.7   -- The transparency of the tracers.
+	
+		_G.ModeSkipKey = Enum.KeyCode.E   -- The key that changes between modes that indicate where will the tracers come from.
+		_G.DisableKey = Enum.KeyCode.Q   -- The key that disables / enables the tracers.
+	
+		local function CreateTracers()
+			for _, v in next, Players:GetPlayers() do
+				if v.Name ~= game.Players.LocalPlayer.Name then
+					local TracerLine = Drawing.new("Line")
+	
+					RunService.RenderStepped:Connect(function()
+						if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
+							local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
+							local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
+	
+							TracerLine.Thickness = _G.TracerThickness
+							TracerLine.Transparency = _G.TracerTransparency
+							TracerLine.Color = _G.TracerColor
+	
+							if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
+								TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+							elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
+								TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+							elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
+								TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
+							end
+	
+							if OnScreen == true  then
+								TracerLine.To = Vector2.new(Vector.X, Vector.Y)
+								if _G.TeamCheck == true then 
+									if Players.LocalPlayer.Team ~= v.Team then
+										TracerLine.Visible = _G.TracersVisible
+									else
+										TracerLine.Visible = false
+									end
+								else
+									TracerLine.Visible = _G.TracersVisible
+								end
+							else
+								TracerLine.Visible = false
+							end
+						else
+							TracerLine.Visible = false
+						end
+					end)
+	
+					Players.PlayerRemoving:Connect(function()
+						TracerLine.Visible = false
+					end)
+				end
+			end
+	
+			Players.PlayerAdded:Connect(function(Player)
+				Player.CharacterAdded:Connect(function(v)
+					if v.Name ~= game.Players.LocalPlayer.Name then
+						local TracerLine = Drawing.new("Line")
+	
+						RunService.RenderStepped:Connect(function()
+							if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
+								local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
+								local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
+	
+								TracerLine.Thickness = _G.TracerThickness
+								TracerLine.Transparency = _G.TracerTransparency
+								TracerLine.Color = _G.TracerColor
+	
+								if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
+									TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
+								elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
+									TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+								elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
+									TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
+								end
+	
+								if OnScreen == true  then
+									TracerLine.To = Vector2.new(Vector.X, Vector.Y)
+									if _G.TeamCheck == true then 
+										if Players.LocalPlayer.Team ~= Player.Team then
+											TracerLine.Visible = _G.TracersVisible
+										else
+											TracerLine.Visible = false
+										end
+									else
+										TracerLine.Visible = _G.TracersVisible
+									end
+								else
+									TracerLine.Visible = false
+								end
+							else
+								TracerLine.Visible = false
+							end
+						end)
+	
+						Players.PlayerRemoving:Connect(function()
+							TracerLine.Visible = false
+						end)
+					end
+				end)
+			end)
+		end
+	
+		UserInputService.TextBoxFocused:Connect(function()
+			Typing = true
+		end)
+	
+		UserInputService.TextBoxFocusReleased:Connect(function()
+			Typing = false
+		end)
+	
+		UserInputService.InputBegan:Connect(function(Input)
+			if Input.KeyCode == _G.ModeSkipKey and Typing == false then
+				if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false and _G.TracersVisible == true then
+					_G.FromCenter = false
+					_G.FromBottom = true
+					_G.FromMouse = false
+	
+					if _G.SendNotifications == true then
+						game:GetService("StarterGui"):SetCore("SendNotification",{
+							Title = "Exunys Developer";
+							Text = "Tracers will be now coming from the bottom of your screen (Mode 1)";
+							Duration = 5;
+						})
+					end
+				elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true and _G.TracersVisible == true then
+					_G.FromCenter = true
+					_G.FromBottom = false
+					_G.FromMouse = false
+	
+					if _G.SendNotifications == true then
+						game:GetService("StarterGui"):SetCore("SendNotification",{
+							Title = "Exunys Developer";
+							Text = "Tracers will be now coming from the center of your screen (Mode 2)";
+							Duration = 5;
+						})
+					end
+				elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false and _G.TracersVisible == true then
+					_G.FromCenter = false
+					_G.FromBottom = false
+					_G.FromMouse = true
+	
+					if _G.SendNotifications == true then
+						game:GetService("StarterGui"):SetCore("SendNotification",{
+							Title = "Exunys Developer";
+							Text = "Tracers will be now coming from the position of your mouse cursor on your screen (Mode 3)";
+							Duration = 5;
+						})
+					end
+				end
+			elseif Input.KeyCode == _G.DisableKey and Typing == false then
+				_G.TracersVisible = not _G.TracersVisible
+	
+				if _G.SendNotifications == true then
+					game:GetService("StarterGui"):SetCore("SendNotification",{
+						Title = "Exunys Developer";
+						Text = "The tracers' visibility is now set to "..tostring(_G.TracersVisible)..".";
+						Duration = 5;
+					})
+				end
+			end
+		end)
+	
+		if _G.DefaultSettings == true then
+			_G.TeamCheck = false
+			_G.FromMouse = false
+			_G.FromCenter = false
+			_G.FromBottom = true
+			_G.TracersVisible = true
+			_G.TracerColor = Color3.fromRGB(40, 90, 255)
+			_G.TracerThickness = 1
+			_G.TracerTransparency = 0.5
+			_G.ModeSkipKey = Enum.KeyCode.E
+			_G.DisableKey = Enum.KeyCode.Q
+		end
+	
+		local Success, Errored = pcall(function()
+			CreateTracers()
+		end)
+	
+		if Success and not Errored then
+			if _G.SendNotifications == true then
+				game:GetService("StarterGui"):SetCore("SendNotification",{
+					Title = "Exunys Developer";
+					Text = "Tracer script has successfully loaded.";
+					Duration = 5;
+				})
+			end
+		elseif Errored and not Success then
+			if _G.SendNotifications == true then
+				game:GetService("StarterGui"):SetCore("SendNotification",{
+					Title = "Exunys Developer";
+					Text = "Tracer script has errored while loading, please check the developer console! (F9)";
+					Duration = 5;
+				})
+			end
+			TestService:Message("The tracer script has errored, please notify Exunys with the following information :")
+			warn(Errored)
+			print("!! IF THE ERROR IS A FALSE POSITIVE (says that a player cannot be found) THEN DO NOT BOTHER !!")
+		end
+	end)
+end
+coroutine.wrap(WGHKI_fake_script)()
+local function GTLUE_fake_script() -- Toggle_6.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_6)
+
+	local FlyToggled = false
+	
+	script.Parent.Parent.Parent.Fly.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			FlyToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			FlyToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+		
+		wait()
+		
+		if FlyToggled == true then
+			_G.FLYING = true
+		end
+		
+		if FlyToggled == false then
+			_G.FLYING = false
+			LP.Character.Humanoid.PlatformStand = true
+			if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+				SPEED = 50
+			elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+				SPEED = 0
+			end
+			if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+				BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+				lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+			elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+				BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+			else
+				BV.velocity = Vector3.new(0, 0.1, 0)
+			end
+			BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
+		end
+		
+		_G.FLYING = false
+		local LP = game:service('Players').LocalPlayer
+		local T = LP.Character.UpperTorso
+		local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local SPEED = 5
+		local MOUSE = LP:GetMouse()
+	
+	
+		local function FLY()
+			_G.FLYING = true
+			local BG = Instance.new('BodyGyro', T)
+			local BV = Instance.new('BodyVelocity', T)
+			BG.P = 9e4
+			BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			BG.cframe = T.CFrame
+			BV.velocity = Vector3.new(0, 0.1, 0)
+			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+	
+			spawn(function()
+				repeat wait()
+					LP.Character.Humanoid.PlatformStand = true
+					if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+						SPEED = 50
+					elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+						SPEED = 0
+					end
+					if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+						lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+					elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+					else
+						BV.velocity = Vector3.new(0, 0.1, 0)
+					end
+					BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
+				until not _G.FLYING
+				CONTROL = {F = 0, B = 0, L = 0, R = 0}
+				lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				SPEED = 0
+				BG:destroy()
+				BV:destroy()
+				LP.Character.Humanoid.PlatformStand = false
+			end)
+		end
+	
+		MOUSE.KeyDown:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 1
+			elseif KEY:lower() == 's' then
+				CONTROL.B = -1
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = -1 
+			elseif KEY:lower() == 'd' then 
+				CONTROL.R = 1
+			end
+		end)
+	
+		MOUSE.KeyUp:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 0
+			elseif KEY:lower() == 's' then
+				CONTROL.B = 0
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = 0
+			elseif KEY:lower() == 'd' then
+				CONTROL.R = 0
+			end
+		end)
+	
+	
+	
+	
+		FLY()
+	end)
+end
+coroutine.wrap(GTLUE_fake_script)()
+local function DZIS_fake_script() -- Toggle_7.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_7)
+
+	local NoclipToggled = false
+	
+	script.Parent.Parent.Parent.Noclip.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			NoclipToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			NoclipToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+		
+		wait()
+		
+		if NoclipToggled == true then
+			nam = game.Players.LocalPlayer.Name
+			
+			game:GetService('RunService').Stepped:connect(function()
+				for a, b in pairs(game.Workspace:GetChildren()) do
+					if b.Name == nam then
+						for i, v in pairs(game.Workspace[nam]:GetChildren()) do
+							if v:IsA("BasePart") then
+								v.CanCollide = false
+							end
+						end
+					end
+				end
+			end)
+		end
+		
+		if NoclipToggled == false then
+			nam = game.Players.LocalPlayer.Name
+	
+			game:GetService('RunService').Stepped:connect(function()
+				for a, b in pairs(game.Workspace:GetChildren()) do
+					if b.Name == nam then
+						for i, v in pairs(game.Workspace[nam]:GetChildren()) do
+							if v:IsA("BasePart") then
+								v.CanCollide = false
+							end
+						end
+					end
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(DZIS_fake_script)()
+local function OICINN_fake_script() -- AimbotTab_2.ColorAnimation 
+	local script = Instance.new('LocalScript', AimbotTab_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local h = script.Parent.Parent.Parent.Tabs
+		h.AimbotTab.Visible = true
+		h.VisualsTab.Visible = false
+		h.MiscTab.Visible = false
+		h.CreditsTab.Visible = false
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+	end)
+end
+coroutine.wrap(OICINN_fake_script)()
+local function JSCWNM_fake_script() -- Visuals.ColorAnimation 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local h = script.Parent.Parent.Parent.Tabs
+		h.AimbotTab.Visible = false
+		h.VisualsTab.Visible = true
+		h.MiscTab.Visible = false
+		h.CreditsTab.Visible = false
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+	end)
+end
+coroutine.wrap(JSCWNM_fake_script)()
+local function KWYL_fake_script() -- Misc.ColorAnimation 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local h = script.Parent.Parent.Parent.Tabs
+		h.AimbotTab.Visible = false
+		h.VisualsTab.Visible = false
+		h.MiscTab.Visible = true
+		h.CreditsTab.Visible = false
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+	end)
+end
+coroutine.wrap(KWYL_fake_script)()
+local function IYUMOWP_fake_script() -- Cedits.ColorAnimation 
+	local script = Instance.new('LocalScript', Cedits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local h = script.Parent.Parent.Parent.Tabs
+		h.AimbotTab.Visible = false
+		h.VisualsTab.Visible = false
+		h.MiscTab.Visible = false
+		h.CreditsTab.Visible = true
+	end)
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(250, 250, 250)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(245, 245, 245)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(240, 240, 240)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(235, 235, 235)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(230, 230, 230)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(225, 225, 225)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(220, 220, 220)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(215, 215, 215)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(210, 210, 210)
+		wait()
+		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
+	end)
+end
+coroutine.wrap(IYUMOWP_fake_script)()
+local function POVJTB_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(POVJTB_fake_script)()
