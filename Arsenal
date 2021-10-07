@@ -664,11 +664,11 @@ Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
 -- Scripts:
 
-local function OUNM_fake_script() -- Toggle.LocalScript 
+local function RQUNWNW_fake_script() -- Toggle.LocalScript 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local SilentAimToggled = false
-	
+
 	script.Parent.Parent.Parent.SilentAim.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			SilentAimToggled = true
@@ -679,9 +679,9 @@ local function OUNM_fake_script() -- Toggle.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if SilentAimToggled == true then
 			local CurrentCamera = workspace.CurrentCamera
 			local Players = game.GetService(game, "Players")
@@ -730,18 +730,18 @@ local function OUNM_fake_script() -- Toggle.LocalScript
 			end)
 			setreadonly(MT, true)
 		end
-		
+
 		if SilentAimToggled == false then
-			
+
 		end
 	end)
 end
-coroutine.wrap(OUNM_fake_script)()
-local function RETG_fake_script() -- Toggle_2.LocalScript 
+coroutine.wrap(RQUNWNW_fake_script)()
+local function XFSK_fake_script() -- Toggle_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	local WallBangToggled = false
-	
+
 	script.Parent.Parent.Parent.WallBang.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			WallBangToggled = true
@@ -752,17 +752,17 @@ local function RETG_fake_script() -- Toggle_2.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if WallBangToggled == true then
 			_G.Enable = true
 		end
-		
+
 		if WallBangToggled == false then
 			_G.Enable = not _G.Enable
 		end
-		
+
 		local MT = getrawmetatable(game)
 		local OldIndex = MT.__index
 		setreadonly(MT, false)
@@ -776,12 +776,12 @@ local function RETG_fake_script() -- Toggle_2.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(RETG_fake_script)()
-local function SVDQG_fake_script() -- Toggle_3.LocalScript 
+coroutine.wrap(XFSK_fake_script)()
+local function TARKICK_fake_script() -- Toggle_3.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	local AimbotToggled = false
-	
+
 	script.Parent.Parent.Parent.Aimbot.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			AimbotToggled = true
@@ -792,23 +792,23 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if AimbotToggled == true then
-		   aimbotting = true
+			aimbotting = true
 		end
-		
+
 		if AimbotToggled == false then
 			aimbotting = false
 		end
-		
+
 		local safe = setmetatable({}, {
 			__index = function(_, k)
 				return game:GetService(k)
 			end
 		})
-	
+
 		local movethemouse = mousemoverel or Input.MoveMouse --Mouse Move Function.
 		local leftclickme = nil --Auto Shoot Key Press Thingy.
 		local aimbotting = false -- Toggles.
@@ -817,15 +817,15 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 		local visiblecheck = true
 		_G.xaimoffset = 0 --_G.xaimoffset = -25
 		_G.maxdistfromcross = 100
-	
+
 		local cam = safe.Workspace.CurrentCamera -- Current Camera
 		local lp = safe.Players.LocalPlayer -- Local Player
 		local lpc = safe.Players.LocalPlayer.Character -- Local Player Character
-	
+
 		local wtos = function(v) -- World To Screen
 			return cam:WorldToScreenPoint(v)
 		end
-	
+
 		local distFromCenter = function(x, y)
 			local vps = cam.ViewportSize -- Get ViewPortSize.
 			local vpsx = vps.X
@@ -837,11 +837,11 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 			local Hypotenuse = math.sqrt(math.pow(xdist, 2) + math.pow(ydist, 2))
 			return Hypotenuse
 		end
-	
+
 		local function inlos(p, ...) -- In line of site?
 			return #cam:GetPartsObscuringTarget({p}, {cam, lp.Character, ...}) == 0
 		end
-	
+
 		local getclosestPlayer = function() -- Checks the closest player based on Hypotenuse.
 			local plrs, v = safe.Players:GetPlayers()
 			local maxdist = 75
@@ -871,7 +871,7 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 			end
 			return plr, dist
 		end
-	
+
 		local AimAt = function(x, y)
 			local vps = cam.ViewportSize
 			local vpsx = vps.X
@@ -881,7 +881,7 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 			local aimspeed = 5
 			local aimatx
 			local aimaty
-	
+
 			if x ~= 0 then
 				if x > screencenterx then
 					aimatx = -(screencenterx - x)
@@ -898,7 +898,7 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 					end
 				end
 			end
-	
+
 			if y ~= 0 then
 				if y > screencentery then
 					aimaty = -(screencentery - y)
@@ -917,7 +917,7 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 			end
 			return aimatx, aimaty
 		end
-	
+
 		local MouseTests = function()
 			local player = safe.Players.LocalPlayer
 			local mouse = player:GetMouse()
@@ -956,14 +956,14 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 				end
 			end
 		end
-	
+
 		game:GetService('RunService').Stepped:connect(function()
 			if aimbotting then
 				--MouseTests()
 			end
 		end)
-	
-	
+
+
 		local plr = safe.Players.LocalPlayer
 		local mouse = plr:GetMouse()
 		mouse.KeyDown:connect(function(key)
@@ -972,18 +972,18 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 				print("Aimbotting: " .. tostring(aimbotting))
 				MouseTests()
 			end
-	
+
 			if key == "m" then
 				teamcheck = not teamcheck
 				print("Team Check: " .. tostring(teamcheck))
 			end
 		end)
-	
-	
-	
-	
+
+
+
+
 		MB2Held = false
-	
+
 		function onKeyPress(inputObject,gameProcessed)
 			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
 				MB2Held = true
@@ -995,19 +995,19 @@ local function SVDQG_fake_script() -- Toggle_3.LocalScript
 				end
 			end
 		end
-	
+
 		function onKeyRelease(inputObject,gameProcessed)
 			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
 				MB2Held = false
 			end
 		end
-	
+
 		game:GetService("UserInputService").InputBegan:connect(onKeyPress)
 		game:GetService("UserInputService").InputEnded:connect(onKeyRelease)
 	end)
 end
-coroutine.wrap(SVDQG_fake_script)()
-local function ZRDC_fake_script() -- Toggle_4.LocalScript 
+coroutine.wrap(TARKICK_fake_script)()
+local function TJIL_fake_script() -- Toggle_4.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_4)
 
 	script.Parent.Parent.Parent.Esp.MouseButton1Click:Connect(function()
@@ -1015,11 +1015,11 @@ local function ZRDC_fake_script() -- Toggle_4.LocalScript
 		local Player = game:GetService("Players").LocalPlayer
 		local Camera = game:GetService("Workspace").CurrentCamera
 		local Mouse = Player:GetMouse()
-	
+
 		local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
 			return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
 		end
-	
+
 		local function GetClosest(points, dest)
 			local min  = math.huge 
 			local closest = nil
@@ -1032,7 +1032,7 @@ local function ZRDC_fake_script() -- Toggle_4.LocalScript
 			end
 			return closest
 		end
-	
+
 		local function DrawESP(plr)
 			local Box = Drawing.new("Quad")
 			Box.Visible = false
@@ -1043,7 +1043,7 @@ local function ZRDC_fake_script() -- Toggle_4.LocalScript
 			Box.Color = Color3.fromRGB(255, 255, 255)
 			Box.Thickness = 2
 			Box.Transparency = 1
-	
+
 			local function Update()
 				local c
 				c = game:GetService("RunService").RenderStepped:Connect(function()
@@ -1072,13 +1072,13 @@ local function ZRDC_fake_script() -- Toggle_4.LocalScript
 							local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
 							local Top = GetClosest(points, Vector2.new(pos.X, 0))
 							local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
-	
+
 							if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
 								Box.PointA = Vector2.new(Right.X, Top.Y)
 								Box.PointB = Vector2.new(Left.X, Top.Y)
 								Box.PointC = Vector2.new(Left.X, Bottom.Y)
 								Box.PointD = Vector2.new(Right.X, Bottom.Y)
-	
+
 								Box.Visible = true
 							else 
 								Box.Visible = false
@@ -1096,20 +1096,20 @@ local function ZRDC_fake_script() -- Toggle_4.LocalScript
 			end
 			coroutine.wrap(Update)()
 		end
-	
+
 		for _,v in pairs(game:GetService("Players"):GetChildren()) do
 			if v.Name ~= Player.Name then 
 				DrawESP(v)
 			end
 		end
-	
+
 		game:GetService("Players").PlayerAdded:Connect(function(v)
 			DrawESP(v)
 		end)
 	end)
 end
-coroutine.wrap(ZRDC_fake_script)()
-local function WGHKI_fake_script() -- Toggle_5.LocalScript 
+coroutine.wrap(TJIL_fake_script)()
+local function WNPP_fake_script() -- Toggle_5.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_5)
 
 	script.Parent.Parent.Parent.Tracers.MouseButton1Click:Connect(function()
@@ -1120,9 +1120,9 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 				return "Yes"
 			end
 		end
-	
+
 		local Find_Required = API_Check()
-	
+
 		if Find_Required == "No" then
 			game:GetService("StarterGui"):SetCore("SendNotification",{
 				Title = "Exunys Developer";
@@ -1130,51 +1130,51 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 				Duration = math.huge;
 				Button1 = "OK"
 			})
-	
+
 			return
 		end
-	
+
 		local RunService = game:GetService("RunService")
 		local Players = game:GetService("Players")
 		local Camera = game:GetService("Workspace").CurrentCamera
 		local UserInputService = game:GetService("UserInputService")
 		local TestService = game:GetService("TestService")
-	
+
 		local Typing = false
-	
+
 		_G.SendNotifications = false   -- If set to true then the script would notify you frequently on any changes applied and when loaded / errored. (If a game can detect this, it is recommended to set it to false)
 		_G.DefaultSettings = false   -- If set to true then the tracer script would run with default settings regardless of any changes you made.
-	
+
 		_G.TeamCheck = false   -- If set to true then the script would create tracers only for the enemy team members.
-	
+
 		--[!]-- ONLY ONE OF THESE VALUES SHOULD BE SET TO TRUE TO NOT ERROR THE SCRIPT --[!]--
-	
+
 		_G.FromMouse = false   -- If set to true, the tracers will come from the position of your mouse curson on your screen.
 		_G.FromCenter = false   -- If set to true, the tracers will come from the center of your screen.
 		_G.FromBottom = true   -- If set to true, the tracers will come from the bottom of your screen.
-	
+
 		_G.TracersVisible = true   -- If set to true then the tracers will be visible and vice versa.
 		_G.TracerColor = Color3.fromRGB(255, 80, 10)   -- The color that the tracers would appear as.
 		_G.TracerThickness = 1   -- The thickness of the tracers.
 		_G.TracerTransparency = 0.7   -- The transparency of the tracers.
-	
+
 		_G.ModeSkipKey = Enum.KeyCode.E   -- The key that changes between modes that indicate where will the tracers come from.
 		_G.DisableKey = Enum.KeyCode.Q   -- The key that disables / enables the tracers.
-	
+
 		local function CreateTracers()
 			for _, v in next, Players:GetPlayers() do
 				if v.Name ~= game.Players.LocalPlayer.Name then
 					local TracerLine = Drawing.new("Line")
-	
+
 					RunService.RenderStepped:Connect(function()
 						if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
 							local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
 							local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
-	
+
 							TracerLine.Thickness = _G.TracerThickness
 							TracerLine.Transparency = _G.TracerTransparency
 							TracerLine.Color = _G.TracerColor
-	
+
 							if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
 								TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
 							elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
@@ -1182,7 +1182,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 							elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
 								TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
 							end
-	
+
 							if OnScreen == true  then
 								TracerLine.To = Vector2.new(Vector.X, Vector.Y)
 								if _G.TeamCheck == true then 
@@ -1201,27 +1201,27 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 							TracerLine.Visible = false
 						end
 					end)
-	
+
 					Players.PlayerRemoving:Connect(function()
 						TracerLine.Visible = false
 					end)
 				end
 			end
-	
+
 			Players.PlayerAdded:Connect(function(Player)
 				Player.CharacterAdded:Connect(function(v)
 					if v.Name ~= game.Players.LocalPlayer.Name then
 						local TracerLine = Drawing.new("Line")
-	
+
 						RunService.RenderStepped:Connect(function()
 							if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
 								local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
 								local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
-	
+
 								TracerLine.Thickness = _G.TracerThickness
 								TracerLine.Transparency = _G.TracerTransparency
 								TracerLine.Color = _G.TracerColor
-	
+
 								if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
 									TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
 								elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
@@ -1229,7 +1229,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 								elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
 									TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
 								end
-	
+
 								if OnScreen == true  then
 									TracerLine.To = Vector2.new(Vector.X, Vector.Y)
 									if _G.TeamCheck == true then 
@@ -1248,7 +1248,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 								TracerLine.Visible = false
 							end
 						end)
-	
+
 						Players.PlayerRemoving:Connect(function()
 							TracerLine.Visible = false
 						end)
@@ -1256,22 +1256,22 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 				end)
 			end)
 		end
-	
+
 		UserInputService.TextBoxFocused:Connect(function()
 			Typing = true
 		end)
-	
+
 		UserInputService.TextBoxFocusReleased:Connect(function()
 			Typing = false
 		end)
-	
+
 		UserInputService.InputBegan:Connect(function(Input)
 			if Input.KeyCode == _G.ModeSkipKey and Typing == false then
 				if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false and _G.TracersVisible == true then
 					_G.FromCenter = false
 					_G.FromBottom = true
 					_G.FromMouse = false
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1283,7 +1283,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 					_G.FromCenter = true
 					_G.FromBottom = false
 					_G.FromMouse = false
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1295,7 +1295,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 					_G.FromCenter = false
 					_G.FromBottom = false
 					_G.FromMouse = true
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1306,7 +1306,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 				end
 			elseif Input.KeyCode == _G.DisableKey and Typing == false then
 				_G.TracersVisible = not _G.TracersVisible
-	
+
 				if _G.SendNotifications == true then
 					game:GetService("StarterGui"):SetCore("SendNotification",{
 						Title = "Exunys Developer";
@@ -1316,7 +1316,7 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 				end
 			end
 		end)
-	
+
 		if _G.DefaultSettings == true then
 			_G.TeamCheck = false
 			_G.FromMouse = false
@@ -1329,11 +1329,11 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 			_G.ModeSkipKey = Enum.KeyCode.E
 			_G.DisableKey = Enum.KeyCode.Q
 		end
-	
+
 		local Success, Errored = pcall(function()
 			CreateTracers()
 		end)
-	
+
 		if Success and not Errored then
 			if _G.SendNotifications == true then
 				game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -1356,12 +1356,12 @@ local function WGHKI_fake_script() -- Toggle_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WGHKI_fake_script)()
-local function GTLUE_fake_script() -- Toggle_6.LocalScript 
+coroutine.wrap(WNPP_fake_script)()
+local function OXKXRCP_fake_script() -- Toggle_6.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_6)
 
 	local FlyToggled = false
-	
+
 	script.Parent.Parent.Parent.Fly.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			FlyToggled = true
@@ -1372,13 +1372,13 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if FlyToggled == true then
 			_G.FLYING = true
 		end
-		
+
 		if FlyToggled == false then
 			_G.FLYING = false
 			LP.Character.Humanoid.PlatformStand = true
@@ -1397,7 +1397,7 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 			end
 			BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
 		end
-		
+
 		_G.FLYING = false
 		local LP = game:service('Players').LocalPlayer
 		local T = LP.Character.UpperTorso
@@ -1405,8 +1405,8 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
 		local SPEED = 5
 		local MOUSE = LP:GetMouse()
-	
-	
+
+
 		local function FLY()
 			_G.FLYING = true
 			local BG = Instance.new('BodyGyro', T)
@@ -1416,8 +1416,8 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 			BG.cframe = T.CFrame
 			BV.velocity = Vector3.new(0, 0.1, 0)
 			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
-	
-	
+
+
 			spawn(function()
 				repeat wait()
 					LP.Character.Humanoid.PlatformStand = true
@@ -1444,7 +1444,7 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 				LP.Character.Humanoid.PlatformStand = false
 			end)
 		end
-	
+
 		MOUSE.KeyDown:connect(function(KEY)
 			if KEY:lower() == 'w' then
 				CONTROL.F = 1
@@ -1456,7 +1456,7 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 				CONTROL.R = 1
 			end
 		end)
-	
+
 		MOUSE.KeyUp:connect(function(KEY)
 			if KEY:lower() == 'w' then
 				CONTROL.F = 0
@@ -1468,19 +1468,19 @@ local function GTLUE_fake_script() -- Toggle_6.LocalScript
 				CONTROL.R = 0
 			end
 		end)
-	
-	
-	
-	
+
+
+
+
 		FLY()
 	end)
 end
-coroutine.wrap(GTLUE_fake_script)()
-local function DZIS_fake_script() -- Toggle_7.LocalScript 
+coroutine.wrap(OXKXRCP_fake_script)()
+local function ZZNE_fake_script() -- Toggle_7.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_7)
 
 	local NoclipToggled = false
-	
+
 	script.Parent.Parent.Parent.Noclip.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			NoclipToggled = true
@@ -1491,12 +1491,12 @@ local function DZIS_fake_script() -- Toggle_7.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if NoclipToggled == true then
 			nam = game.Players.LocalPlayer.Name
-			
+
 			game:GetService('RunService').Stepped:connect(function()
 				for a, b in pairs(game.Workspace:GetChildren()) do
 					if b.Name == nam then
@@ -1509,10 +1509,10 @@ local function DZIS_fake_script() -- Toggle_7.LocalScript
 				end
 			end)
 		end
-		
+
 		if NoclipToggled == false then
 			nam = game.Players.LocalPlayer.Name
-	
+
 			game:GetService('RunService').Stepped:connect(function()
 				for a, b in pairs(game.Workspace:GetChildren()) do
 					if b.Name == nam then
@@ -1527,8 +1527,8 @@ local function DZIS_fake_script() -- Toggle_7.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DZIS_fake_script)()
-local function OICINN_fake_script() -- AimbotTab_2.ColorAnimation 
+coroutine.wrap(ZZNE_fake_script)()
+local function OIJYA_fake_script() -- AimbotTab_2.ColorAnimation 
 	local script = Instance.new('LocalScript', AimbotTab_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1538,7 +1538,7 @@ local function OICINN_fake_script() -- AimbotTab_2.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1562,7 +1562,7 @@ local function OICINN_fake_script() -- AimbotTab_2.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1587,8 +1587,8 @@ local function OICINN_fake_script() -- AimbotTab_2.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(OICINN_fake_script)()
-local function JSCWNM_fake_script() -- Visuals.ColorAnimation 
+coroutine.wrap(OIJYA_fake_script)()
+local function VNRP_fake_script() -- Visuals.ColorAnimation 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1598,7 +1598,7 @@ local function JSCWNM_fake_script() -- Visuals.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1622,7 +1622,7 @@ local function JSCWNM_fake_script() -- Visuals.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1647,8 +1647,8 @@ local function JSCWNM_fake_script() -- Visuals.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(JSCWNM_fake_script)()
-local function KWYL_fake_script() -- Misc.ColorAnimation 
+coroutine.wrap(VNRP_fake_script)()
+local function LIXSXG_fake_script() -- Misc.ColorAnimation 
 	local script = Instance.new('LocalScript', Misc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1658,7 +1658,7 @@ local function KWYL_fake_script() -- Misc.ColorAnimation
 		h.MiscTab.Visible = true
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1682,7 +1682,7 @@ local function KWYL_fake_script() -- Misc.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1707,8 +1707,8 @@ local function KWYL_fake_script() -- Misc.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(KWYL_fake_script)()
-local function IYUMOWP_fake_script() -- Cedits.ColorAnimation 
+coroutine.wrap(LIXSXG_fake_script)()
+local function PDDXXFR_fake_script() -- Cedits.ColorAnimation 
 	local script = Instance.new('LocalScript', Cedits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1718,7 +1718,7 @@ local function IYUMOWP_fake_script() -- Cedits.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = true
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1742,7 +1742,7 @@ local function IYUMOWP_fake_script() -- Cedits.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1767,8 +1767,8 @@ local function IYUMOWP_fake_script() -- Cedits.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(IYUMOWP_fake_script)()
-local function POVJTB_fake_script() -- Main.Drag 
+coroutine.wrap(PDDXXFR_fake_script)()
+local function UWSGSKO_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1777,14 +1777,14 @@ local function POVJTB_fake_script() -- Main.Drag
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -1797,7 +1797,7 @@ local function POVJTB_fake_script() -- Main.Drag
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -1806,4 +1806,4 @@ local function POVJTB_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(POVJTB_fake_script)()
+coroutine.wrap(UWSGSKO_fake_script)()
