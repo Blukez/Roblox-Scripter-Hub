@@ -274,6 +274,6 @@ coroutine.wrap(TSCXCAG_fake_script)()
 
 Load.MouseButton1Click:Connect(function()
 if GameDetect.Text == "Arsenal" then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Arsenal'),true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Arsenal"))()
 end
 end)
