@@ -427,3 +427,9 @@ local function VWYXEL_fake_script() -- Main.AnimationManager
 	end)
 end
 coroutine.wrap(VWYXEL_fake_script)()
+
+Load.MouseButton1Click:Connect(function()
+if GameDetect.Text == "Arsenal" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Arsenal"))()
+end
+end)
