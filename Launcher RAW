@@ -7,11 +7,11 @@ local RobloxScripterHubLauncher = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
-local Game = Instance.new("Frame")
+local Gamee = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local GameDetect = Instance.new("TextLabel")
 local Load = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local GameTitle = Instance.new("TextLabel")
 local UICorner_3 = Instance.new("UICorner")
 
 --Properties:
@@ -30,7 +30,7 @@ Title.Name = "Title"
 Title.Parent = Main
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0923983455, 0, 0.0939972401, 0)
+Title.Position = UDim2.new(0.0976157337, 0, 0.0939972401, 0)
 Title.Size = UDim2.new(0, 305, 0, 38)
 Title.Font = Enum.Font.SourceSans
 Title.Text = "Roblox Scripter Hub"
@@ -46,29 +46,16 @@ ImageLabel.Position = UDim2.new(0.0205404032, 0, 0.0417427272, 0)
 ImageLabel.Size = UDim2.new(0, 60, 0, 60)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=7553453866"
 
-Game.Name = "Game"
-Game.Parent = Main
-Game.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-Game.Position = UDim2.new(0.0313043483, 0, 0.408215851, 0)
-Game.Size = UDim2.new(0, 539, 0, 95)
+Gamee.Name = "Gamee"
+Gamee.Parent = Main
+Gamee.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+Gamee.Position = UDim2.new(0.0313043483, 0, 0.408215851, 0)
+Gamee.Size = UDim2.new(0, 539, 0, 95)
 
-UICorner.Parent = Game
-
-GameDetect.Name = "GameDetect"
-GameDetect.Parent = Game
-GameDetect.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GameDetect.BackgroundTransparency = 1.000
-GameDetect.Position = UDim2.new(0.257884979, 0, 0.0664184541, 0)
-GameDetect.Size = UDim2.new(0, 261, 0, 38)
-GameDetect.Font = Enum.Font.SourceSans
-GameDetect.Text = "N/A"
-GameDetect.TextColor3 = Color3.fromRGB(255, 255, 255)
-GameDetect.TextScaled = true
-GameDetect.TextSize = 14.000
-GameDetect.TextWrapped = true
+UICorner.Parent = Gamee
 
 Load.Name = "Load"
-Load.Parent = Game
+Load.Parent = Gamee
 Load.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 Load.Position = UDim2.new(0.0189999994, 0, 0.545000017, 0)
 Load.Size = UDim2.new(0, 519, 0, 31)
@@ -81,13 +68,26 @@ Load.TextWrapped = true
 
 UICorner_2.Parent = Load
 
-UICorner_3.CornerRadius = UDim.new(0, 15)
+GameTitle.Name = "GameTitle"
+GameTitle.Parent = Gamee
+GameTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameTitle.BackgroundTransparency = 1.000
+GameTitle.Position = UDim2.new(0.257884979, 0, 0.0664184541, 0)
+GameTitle.Size = UDim2.new(0, 261, 0, 38)
+GameTitle.Font = Enum.Font.SourceSans
+GameTitle.Text = "N/A"
+GameTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameTitle.TextScaled = true
+GameTitle.TextSize = 14.000
+GameTitle.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 16)
 UICorner_3.Parent = Main
 
 -- Scripts:
 
-local function ADGI_fake_script() -- GameDetect.GameDetectScript 
-	local script = Instance.new('LocalScript', GameDetect)
+local function BIQT_fake_script() -- GameTitle.GameDetectScript 
+	local script = Instance.new('LocalScript', GameTitle)
 
 	if game.PlaceId == 7491533387 then
 		script.Parent.Text = "Test Game"
@@ -98,14 +98,14 @@ local function ADGI_fake_script() -- GameDetect.GameDetectScript
 	end
 	
 end
-coroutine.wrap(ADGI_fake_script)()
-local function TSCXCAG_fake_script() -- Main.AnimationManager 
+coroutine.wrap(BIQT_fake_script)()
+local function RHQU_fake_script() -- Main.AnimationManager 
 	local script = Instance.new('LocalScript', Main)
 
-	wait(2)
+	-- LANCHER ANIMATION CREATED BY BLUKEZ
 	
 	local MAIN = script.Parent
-	local GAMESECTION = script.Parent.Game
+	local GAMESECTION = script.Parent.Gamee
 	
 	-- PERPERATIONS
 	
@@ -269,8 +269,164 @@ local function TSCXCAG_fake_script() -- Main.AnimationManager
 	GAMESECTION.GameTitle.TextTransparency = .1
 	wait(.04)
 	GAMESECTION.GameTitle.TextTransparency = 0
+	
+	script.Parent.Game.Load.MouseButton1Click:Connect(function()
+		GAMESECTION.Load.BackgroundTransparency = 0
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .1
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .2
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .3
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .4
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .5
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .6
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .7
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .8
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = .9
+		wait(.00001)
+		GAMESECTION.Load.BackgroundTransparency = 1
+	
+		GAMESECTION.Load.TextTransparency = 0
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .1
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .2
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .3
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .4
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .5
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .6
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .7
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .8
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = .9
+		wait(.00001)
+		GAMESECTION.Load.TextTransparency = 1
+		
+		GAMESECTION.GameTitle.TextTransparency = 0
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .1
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .2
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .3
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .4
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .5
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .6
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .7
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .8
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = .9
+		wait(.00001)
+		GAMESECTION.GameTitle.TextTransparency = 1
+		
+		GAMESECTION.BackgroundTransparency = 0
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .1
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .2
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .3
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .4
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .5
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .6
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .7
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .8
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = .9
+		wait(.00001)
+		GAMESECTION.BackgroundTransparency = 1
+		
+		MAIN.ImageLabel.ImageTransparency = 0
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .1
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .2
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .3
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .4
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .5
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .6
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .7
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .8
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = .9
+		wait(.00001)
+		MAIN.ImageLabel.ImageTransparency = 1
+		
+		MAIN.Title.TextTransparency = 0
+		wait(.00001)
+		MAIN.Title.TextTransparency = .1
+		wait(.00001)
+		MAIN.Title.TextTransparency = .2
+		wait(.00001)
+		MAIN.Title.TextTransparency = .3
+		wait(.00001)
+		MAIN.Title.TextTransparency = .4
+		wait(.00001)
+		MAIN.Title.TextTransparency = .5
+		wait(.00001)
+		MAIN.Title.TextTransparency = .6
+		wait(.00001)
+		MAIN.Title.TextTransparency = .7
+		wait(.00001)
+		MAIN.Title.TextTransparency = .8
+		wait(.00001)
+		MAIN.Title.TextTransparency = .9
+		wait(.00001)
+		MAIN.Title.TextTransparency = 1
+		
+		MAIN.BackgroundTransparency = 0
+		wait(.00001)
+		MAIN.BackgroundTransparency = .1
+		wait(.00001)
+		MAIN.BackgroundTransparency = .2
+		wait(.00001)
+		MAIN.BackgroundTransparency = .3
+		wait(.00001)
+		MAIN.BackgroundTransparency = .4
+		wait(.00001)
+		MAIN.BackgroundTransparency = .5
+		wait(.00001)
+		MAIN.BackgroundTransparency = .6
+		wait(.00001)
+		MAIN.BackgroundTransparency = .7
+		wait(.00001)
+		MAIN.BackgroundTransparency = .8
+		wait(.00001)
+		MAIN.BackgroundTransparency = .9
+		wait(.00001)
+		MAIN.BackgroundTransparency = 1
+	end)
 end
-coroutine.wrap(TSCXCAG_fake_script)()
+coroutine.wrap(RHQU_fake_script)()
 
 Load.MouseButton1Click:Connect(function()
 if GameDetect.Text == "Arsenal" then
