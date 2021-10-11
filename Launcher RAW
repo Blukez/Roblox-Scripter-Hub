@@ -865,3 +865,9 @@ if GameDetect.Text == "Arsenal" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Arsenal"))()
 end
 end)
+
+Load.MouseButton1Click:Connect(function()
+if GameDetect.Text == "Da Hood" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Da%20Hood"))()
+end
+end)
