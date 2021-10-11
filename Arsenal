@@ -71,7 +71,7 @@ local Shadow = Instance.new("ImageLabel")
 --Properties:
 
 RobloxScripterHubArsenal.Name = "RobloxScripterHubArsenal"
-RobloxScripterHubArsenal.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RobloxScripterHubArsenal.Parent = game.CoreGui
 RobloxScripterHubArsenal.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
