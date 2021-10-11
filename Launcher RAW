@@ -861,13 +861,13 @@ end
 coroutine.wrap(VWYXEL_fake_script)()
 
 Load.MouseButton1Click:Connect(function()
-if GameDetect.Text == "Arsenal" then
+if GameTitle.Text == "Arsenal" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Arsenal"))()
 end
 end)
 
 Load.MouseButton1Click:Connect(function()
-if GameDetect.Text == "Da Hood" then
+if GameTitle.Text == "Da Hood" then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Da%20Hood"))()
 end
 end)
