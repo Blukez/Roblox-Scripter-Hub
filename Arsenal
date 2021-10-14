@@ -3,75 +3,76 @@
 
 -- Instances:
 
-local RobloxScripterHubDaHood = Instance.new("ScreenGui")
+local RobloxScripterHubArsenal = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local TopBar = Instance.new("Folder")
 local Title = Instance.new("TextLabel")
 local Logo = Instance.new("ImageLabel")
+local MainObjects = Instance.new("Folder")
 local ShadowFixer = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
 local Tabs = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
-local AutoFarmTab = Instance.new("Frame")
-local AutoFarm = Instance.new("TextButton")
+local AimbotTab = Instance.new("Frame")
+local SilentAim = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local touch_app = Instance.new("ImageButton")
 local Toggle = Instance.new("TextButton")
 local On = Instance.new("TextLabel")
 local Off = Instance.new("TextLabel")
-local HospitalAutoFarm = Instance.new("TextButton")
+local WallBang = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local touch_app_2 = Instance.new("ImageButton")
 local Toggle_2 = Instance.new("TextButton")
 local On_2 = Instance.new("TextLabel")
 local Off_2 = Instance.new("TextLabel")
-local VisualsTab = Instance.new("Frame")
-local Esp = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local touch_app_3 = Instance.new("ImageButton")
 local Toggle_3 = Instance.new("TextButton")
-local Tracers = Instance.new("TextButton")
+local On_3 = Instance.new("TextLabel")
+local Off_3 = Instance.new("TextLabel")
+local VisualsTab = Instance.new("Frame")
+local Esp = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local touch_app_4 = Instance.new("ImageButton")
 local Toggle_4 = Instance.new("TextButton")
-local MiscTab = Instance.new("Frame")
-local Fly = Instance.new("TextButton")
+local Tracers = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local touch_app_5 = Instance.new("ImageButton")
 local Toggle_5 = Instance.new("TextButton")
-local On_3 = Instance.new("TextLabel")
-local Off_3 = Instance.new("TextLabel")
-local Noclip = Instance.new("TextButton")
+local MiscTab = Instance.new("Frame")
+local Fly = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local touch_app_6 = Instance.new("ImageButton")
 local Toggle_6 = Instance.new("TextButton")
 local On_4 = Instance.new("TextLabel")
 local Off_4 = Instance.new("TextLabel")
-local EscapePrison = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local touch_app_7 = Instance.new("ImageButton")
-local FistRange = Instance.new("TextButton")
+local Toggle_7 = Instance.new("TextButton")
+local On_5 = Instance.new("TextLabel")
+local Off_5 = Instance.new("TextLabel")
+local JumpPower = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local touch_app_8 = Instance.new("ImageButton")
-local WalkSpeed = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local touch_app_9 = Instance.new("ImageButton")
 local TextBox = Instance.new("TextBox")
+local UICorner_12 = Instance.new("UICorner")
+local WalkSpeed = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local JumpPower = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
-local touch_app_10 = Instance.new("ImageButton")
+local touch_app_9 = Instance.new("ImageButton")
 local TextBox_2 = Instance.new("TextBox")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local CreditsTab = Instance.new("Frame")
 local Credits = Instance.new("TextLabel")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Credits_2 = Instance.new("TextLabel")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local TabsMenu = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
-local AutoFarm_2 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local AimbotTab_2 = Instance.new("TextButton")
 local Visuals = Instance.new("TextButton")
 local Misc = Instance.new("TextButton")
 local Cedits = Instance.new("TextButton")
@@ -79,12 +80,13 @@ local Shadow = Instance.new("ImageLabel")
 
 --Properties:
 
-RobloxScripterHubDaHood.Name = "RobloxScripterHubDaHood"
-RobloxScripterHubDaHood.Parent = game.CoreGui
-RobloxScripterHubDaHood.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RobloxScripterHubArsenal.Name = "RobloxScripterHubArsenal"
+RobloxScripterHubArsenal.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RobloxScripterHubArsenal.Enabled = true
+RobloxScripterHubArsenal.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = RobloxScripterHubDaHood
+Main.Parent = RobloxScripterHubArsenal
 Main.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 Main.Position = UDim2.new(0.310234398, 0, 0.282054484, 0)
 Main.Selectable = true
@@ -101,10 +103,10 @@ Title.Parent = TopBar
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.0127999997, 0, 0.0191780813, 0)
-Title.Size = UDim2.new(0, 383, 0, 30)
+Title.Size = UDim2.new(0, 372, 0, 30)
 Title.ZIndex = 100
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Roblox Scripter Hub | Da Hood"
+Title.Text = "Roblox Scripter Hub | Arsenal"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
@@ -118,6 +120,9 @@ Logo.Position = UDim2.new(0.0141404299, 0, 0.0198248867, 0)
 Logo.Size = UDim2.new(0, 30, 0, 30)
 Logo.ZIndex = 100
 Logo.Image = "http://www.roblox.com/asset/?id=7553453866"
+
+MainObjects.Name = "MainObjects"
+MainObjects.Parent = Main
 
 ShadowFixer.Name = "ShadowFixer"
 ShadowFixer.Parent = Main
@@ -136,30 +141,30 @@ Tabs.ZIndex = 2
 
 UICorner_3.Parent = Tabs
 
-AutoFarmTab.Name = "AutoFarmTab"
-AutoFarmTab.Parent = Tabs
-AutoFarmTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarmTab.BackgroundTransparency = 1.000
-AutoFarmTab.Size = UDim2.new(0, 597, 0, 259)
-AutoFarmTab.Visible = false
+AimbotTab.Name = "AimbotTab"
+AimbotTab.Parent = Tabs
+AimbotTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotTab.BackgroundTransparency = 1.000
+AimbotTab.Size = UDim2.new(0, 597, 0, 259)
+AimbotTab.Visible = false
 
-AutoFarm.Name = "AutoFarm"
-AutoFarm.Parent = AutoFarmTab
-AutoFarm.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-AutoFarm.Position = UDim2.new(0.012000002, 0, 0.0310000498, 0)
-AutoFarm.Size = UDim2.new(0, 582, 0, 32)
-AutoFarm.ZIndex = 10
-AutoFarm.Font = Enum.Font.SourceSans
-AutoFarm.Text = "       Money Autofarm"
-AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarm.TextSize = 25.000
-AutoFarm.TextWrapped = true
-AutoFarm.TextXAlignment = Enum.TextXAlignment.Left
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = AimbotTab
+SilentAim.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SilentAim.Position = UDim2.new(0.012000002, 0, 0.0310000498, 0)
+SilentAim.Size = UDim2.new(0, 582, 0, 32)
+SilentAim.ZIndex = 10
+SilentAim.Font = Enum.Font.SourceSans
+SilentAim.Text = "       Silent Aim"
+SilentAim.TextColor3 = Color3.fromRGB(255, 255, 255)
+SilentAim.TextSize = 25.000
+SilentAim.TextWrapped = true
+SilentAim.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_4.Parent = AutoFarm
+UICorner_4.Parent = SilentAim
 
 touch_app.Name = "touch_app"
-touch_app.Parent = AutoFarm
+touch_app.Parent = SilentAim
 touch_app.BackgroundTransparency = 1.000
 touch_app.LayoutOrder = 9
 touch_app.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
@@ -170,7 +175,7 @@ touch_app.ImageRectOffset = Vector2.new(84, 204)
 touch_app.ImageRectSize = Vector2.new(36, 36)
 
 Toggle.Name = "Toggle"
-Toggle.Parent = AutoFarm
+Toggle.Parent = SilentAim
 Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggle.BackgroundTransparency = 1.000
 Toggle.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
@@ -209,23 +214,23 @@ Off.TextSize = 14.000
 Off.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
 Off.TextWrapped = true
 
-HospitalAutoFarm.Name = "HospitalAutoFarm"
-HospitalAutoFarm.Parent = AutoFarmTab
-HospitalAutoFarm.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-HospitalAutoFarm.Position = UDim2.new(0.012000002, 0, 0.189301208, 0)
-HospitalAutoFarm.Size = UDim2.new(0, 582, 0, 32)
-HospitalAutoFarm.ZIndex = 10
-HospitalAutoFarm.Font = Enum.Font.SourceSans
-HospitalAutoFarm.Text = "       Hospital Autofarm"
-HospitalAutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-HospitalAutoFarm.TextSize = 25.000
-HospitalAutoFarm.TextWrapped = true
-HospitalAutoFarm.TextXAlignment = Enum.TextXAlignment.Left
+WallBang.Name = "WallBang"
+WallBang.Parent = AimbotTab
+WallBang.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WallBang.Position = UDim2.new(0.012000002, 0, 0.189301208, 0)
+WallBang.Size = UDim2.new(0, 582, 0, 32)
+WallBang.ZIndex = 10
+WallBang.Font = Enum.Font.SourceSans
+WallBang.Text = "       Wall Bang"
+WallBang.TextColor3 = Color3.fromRGB(255, 255, 255)
+WallBang.TextSize = 25.000
+WallBang.TextWrapped = true
+WallBang.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_5.Parent = HospitalAutoFarm
+UICorner_5.Parent = WallBang
 
 touch_app_2.Name = "touch_app"
-touch_app_2.Parent = HospitalAutoFarm
+touch_app_2.Parent = WallBang
 touch_app_2.BackgroundTransparency = 1.000
 touch_app_2.LayoutOrder = 9
 touch_app_2.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
@@ -236,7 +241,7 @@ touch_app_2.ImageRectOffset = Vector2.new(84, 204)
 touch_app_2.ImageRectSize = Vector2.new(36, 36)
 
 Toggle_2.Name = "Toggle"
-Toggle_2.Parent = HospitalAutoFarm
+Toggle_2.Parent = WallBang
 Toggle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggle_2.BackgroundTransparency = 1.000
 Toggle_2.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
@@ -275,6 +280,72 @@ Off_2.TextSize = 14.000
 Off_2.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
 Off_2.TextWrapped = true
 
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = AimbotTab
+Aimbot.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Aimbot.Position = UDim2.new(0.012000002, 0, 0.347602367, 0)
+Aimbot.Size = UDim2.new(0, 582, 0, 32)
+Aimbot.ZIndex = 10
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "       Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 25.000
+Aimbot.TextWrapped = true
+Aimbot.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.Parent = Aimbot
+
+touch_app_3.Name = "touch_app"
+touch_app_3.Parent = Aimbot
+touch_app_3.BackgroundTransparency = 1.000
+touch_app_3.LayoutOrder = 9
+touch_app_3.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_3.Size = UDim2.new(0, 20, 0, 20)
+touch_app_3.ZIndex = 2
+touch_app_3.Image = "rbxassetid://3926305904"
+touch_app_3.ImageRectOffset = Vector2.new(84, 204)
+touch_app_3.ImageRectSize = Vector2.new(36, 36)
+
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = Aimbot
+Toggle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_3.BackgroundTransparency = 1.000
+Toggle_3.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_3.Size = UDim2.new(0, 39, 0, 26)
+Toggle_3.Font = Enum.Font.SourceSans
+Toggle_3.Text = ""
+Toggle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_3.TextSize = 14.000
+
+On_3.Name = "On"
+On_3.Parent = Toggle_3
+On_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_3.BackgroundTransparency = 1.000
+On_3.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_3.Size = UDim2.new(0, 39, 0, 27)
+On_3.Visible = false
+On_3.Font = Enum.Font.SourceSans
+On_3.Text = "On"
+On_3.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_3.TextScaled = true
+On_3.TextSize = 14.000
+On_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_3.TextWrapped = true
+
+Off_3.Name = "Off"
+Off_3.Parent = Toggle_3
+Off_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_3.BackgroundTransparency = 1.000
+Off_3.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_3.Size = UDim2.new(0, 39, 0, 27)
+Off_3.Font = Enum.Font.SourceSans
+Off_3.Text = "Off"
+Off_3.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_3.TextScaled = true
+Off_3.TextSize = 14.000
+Off_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_3.TextWrapped = true
+
 VisualsTab.Name = "VisualsTab"
 VisualsTab.Parent = Tabs
 VisualsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -295,29 +366,29 @@ Esp.TextSize = 25.000
 Esp.TextWrapped = true
 Esp.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_6.Parent = Esp
+UICorner_7.Parent = Esp
 
-touch_app_3.Name = "touch_app"
-touch_app_3.Parent = Esp
-touch_app_3.BackgroundTransparency = 1.000
-touch_app_3.LayoutOrder = 9
-touch_app_3.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
-touch_app_3.Size = UDim2.new(0, 20, 0, 20)
-touch_app_3.ZIndex = 2
-touch_app_3.Image = "rbxassetid://3926305904"
-touch_app_3.ImageRectOffset = Vector2.new(84, 204)
-touch_app_3.ImageRectSize = Vector2.new(36, 36)
+touch_app_4.Name = "touch_app"
+touch_app_4.Parent = Esp
+touch_app_4.BackgroundTransparency = 1.000
+touch_app_4.LayoutOrder = 9
+touch_app_4.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_4.Size = UDim2.new(0, 20, 0, 20)
+touch_app_4.ZIndex = 2
+touch_app_4.Image = "rbxassetid://3926305904"
+touch_app_4.ImageRectOffset = Vector2.new(84, 204)
+touch_app_4.ImageRectSize = Vector2.new(36, 36)
 
-Toggle_3.Name = "Toggle"
-Toggle_3.Parent = Esp
-Toggle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Toggle_3.BackgroundTransparency = 1.000
-Toggle_3.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
-Toggle_3.Size = UDim2.new(0, 39, 0, 26)
-Toggle_3.Font = Enum.Font.SourceSans
-Toggle_3.Text = ""
-Toggle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Toggle_3.TextSize = 14.000
+Toggle_4.Name = "Toggle"
+Toggle_4.Parent = Esp
+Toggle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_4.BackgroundTransparency = 1.000
+Toggle_4.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_4.Size = UDim2.new(0, 39, 0, 26)
+Toggle_4.Font = Enum.Font.SourceSans
+Toggle_4.Text = ""
+Toggle_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_4.TextSize = 14.000
 
 Tracers.Name = "Tracers"
 Tracers.Parent = VisualsTab
@@ -332,29 +403,29 @@ Tracers.TextSize = 25.000
 Tracers.TextWrapped = true
 Tracers.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_7.Parent = Tracers
+UICorner_8.Parent = Tracers
 
-touch_app_4.Name = "touch_app"
-touch_app_4.Parent = Tracers
-touch_app_4.BackgroundTransparency = 1.000
-touch_app_4.LayoutOrder = 9
-touch_app_4.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
-touch_app_4.Size = UDim2.new(0, 20, 0, 20)
-touch_app_4.ZIndex = 2
-touch_app_4.Image = "rbxassetid://3926305904"
-touch_app_4.ImageRectOffset = Vector2.new(84, 204)
-touch_app_4.ImageRectSize = Vector2.new(36, 36)
+touch_app_5.Name = "touch_app"
+touch_app_5.Parent = Tracers
+touch_app_5.BackgroundTransparency = 1.000
+touch_app_5.LayoutOrder = 9
+touch_app_5.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_5.Size = UDim2.new(0, 20, 0, 20)
+touch_app_5.ZIndex = 2
+touch_app_5.Image = "rbxassetid://3926305904"
+touch_app_5.ImageRectOffset = Vector2.new(84, 204)
+touch_app_5.ImageRectSize = Vector2.new(36, 36)
 
-Toggle_4.Name = "Toggle"
-Toggle_4.Parent = Tracers
-Toggle_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Toggle_4.BackgroundTransparency = 1.000
-Toggle_4.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
-Toggle_4.Size = UDim2.new(0, 39, 0, 26)
-Toggle_4.Font = Enum.Font.SourceSans
-Toggle_4.Text = ""
-Toggle_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Toggle_4.TextSize = 14.000
+Toggle_5.Name = "Toggle"
+Toggle_5.Parent = Tracers
+Toggle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_5.BackgroundTransparency = 1.000
+Toggle_5.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_5.Size = UDim2.new(0, 39, 0, 26)
+Toggle_5.Font = Enum.Font.SourceSans
+Toggle_5.Text = ""
+Toggle_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_5.TextSize = 14.000
 
 MiscTab.Name = "MiscTab"
 MiscTab.Parent = Tabs
@@ -375,76 +446,10 @@ Fly.TextSize = 25.000
 Fly.TextWrapped = true
 Fly.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_8.Parent = Fly
-
-touch_app_5.Name = "touch_app"
-touch_app_5.Parent = Fly
-touch_app_5.BackgroundTransparency = 1.000
-touch_app_5.LayoutOrder = 9
-touch_app_5.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
-touch_app_5.Size = UDim2.new(0, 20, 0, 20)
-touch_app_5.ZIndex = 2
-touch_app_5.Image = "rbxassetid://3926305904"
-touch_app_5.ImageRectOffset = Vector2.new(84, 204)
-touch_app_5.ImageRectSize = Vector2.new(36, 36)
-
-Toggle_5.Name = "Toggle"
-Toggle_5.Parent = Fly
-Toggle_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Toggle_5.BackgroundTransparency = 1.000
-Toggle_5.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
-Toggle_5.Size = UDim2.new(0, 39, 0, 26)
-Toggle_5.Font = Enum.Font.SourceSans
-Toggle_5.Text = ""
-Toggle_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-Toggle_5.TextSize = 14.000
-
-On_3.Name = "On"
-On_3.Parent = Toggle_5
-On_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-On_3.BackgroundTransparency = 1.000
-On_3.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
-On_3.Size = UDim2.new(0, 39, 0, 27)
-On_3.Visible = false
-On_3.Font = Enum.Font.SourceSans
-On_3.Text = "On"
-On_3.TextColor3 = Color3.fromRGB(85, 255, 0)
-On_3.TextScaled = true
-On_3.TextSize = 14.000
-On_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
-On_3.TextWrapped = true
-
-Off_3.Name = "Off"
-Off_3.Parent = Toggle_5
-Off_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Off_3.BackgroundTransparency = 1.000
-Off_3.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
-Off_3.Size = UDim2.new(0, 39, 0, 27)
-Off_3.Font = Enum.Font.SourceSans
-Off_3.Text = "Off"
-Off_3.TextColor3 = Color3.fromRGB(255, 0, 0)
-Off_3.TextScaled = true
-Off_3.TextSize = 14.000
-Off_3.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
-Off_3.TextWrapped = true
-
-Noclip.Name = "Noclip"
-Noclip.Parent = MiscTab
-Noclip.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Noclip.Position = UDim2.new(0.0136750434, 0, 0.189301208, 0)
-Noclip.Size = UDim2.new(0, 582, 0, 32)
-Noclip.ZIndex = 10
-Noclip.Font = Enum.Font.SourceSans
-Noclip.Text = "       Noclip"
-Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
-Noclip.TextSize = 25.000
-Noclip.TextWrapped = true
-Noclip.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_9.Parent = Noclip
+UICorner_9.Parent = Fly
 
 touch_app_6.Name = "touch_app"
-touch_app_6.Parent = Noclip
+touch_app_6.Parent = Fly
 touch_app_6.BackgroundTransparency = 1.000
 touch_app_6.LayoutOrder = 9
 touch_app_6.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
@@ -455,7 +460,7 @@ touch_app_6.ImageRectOffset = Vector2.new(84, 204)
 touch_app_6.ImageRectSize = Vector2.new(36, 36)
 
 Toggle_6.Name = "Toggle"
-Toggle_6.Parent = Noclip
+Toggle_6.Parent = Fly
 Toggle_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggle_6.BackgroundTransparency = 1.000
 Toggle_6.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
@@ -494,23 +499,23 @@ Off_4.TextSize = 14.000
 Off_4.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
 Off_4.TextWrapped = true
 
-EscapePrison.Name = "EscapePrison"
-EscapePrison.Parent = MiscTab
-EscapePrison.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-EscapePrison.Position = UDim2.new(0.0136750434, 0, 0.347602367, 0)
-EscapePrison.Size = UDim2.new(0, 582, 0, 32)
-EscapePrison.ZIndex = 10
-EscapePrison.Font = Enum.Font.SourceSans
-EscapePrison.Text = "       Escape Jail"
-EscapePrison.TextColor3 = Color3.fromRGB(255, 255, 255)
-EscapePrison.TextSize = 25.000
-EscapePrison.TextWrapped = true
-EscapePrison.TextXAlignment = Enum.TextXAlignment.Left
+Noclip.Name = "Noclip"
+Noclip.Parent = MiscTab
+Noclip.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Noclip.Position = UDim2.new(0.0136750434, 0, 0.189301208, 0)
+Noclip.Size = UDim2.new(0, 582, 0, 32)
+Noclip.ZIndex = 10
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "       Noclip"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 25.000
+Noclip.TextWrapped = true
+Noclip.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_10.Parent = EscapePrison
+UICorner_10.Parent = Noclip
 
 touch_app_7.Name = "touch_app"
-touch_app_7.Parent = EscapePrison
+touch_app_7.Parent = Noclip
 touch_app_7.BackgroundTransparency = 1.000
 touch_app_7.LayoutOrder = 9
 touch_app_7.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
@@ -520,23 +525,63 @@ touch_app_7.Image = "rbxassetid://3926305904"
 touch_app_7.ImageRectOffset = Vector2.new(84, 204)
 touch_app_7.ImageRectSize = Vector2.new(36, 36)
 
-FistRange.Name = "FistRange"
-FistRange.Parent = MiscTab
-FistRange.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-FistRange.Position = UDim2.new(0.0136750434, 0, 0.509764493, 0)
-FistRange.Size = UDim2.new(0, 582, 0, 32)
-FistRange.ZIndex = 10
-FistRange.Font = Enum.Font.SourceSans
-FistRange.Text = "       Fist Range (Hit people far away using your fist)"
-FistRange.TextColor3 = Color3.fromRGB(255, 255, 255)
-FistRange.TextSize = 25.000
-FistRange.TextWrapped = true
-FistRange.TextXAlignment = Enum.TextXAlignment.Left
+Toggle_7.Name = "Toggle"
+Toggle_7.Parent = Noclip
+Toggle_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Toggle_7.BackgroundTransparency = 1.000
+Toggle_7.Position = UDim2.new(0.921532094, 0, 0.0698600411, 0)
+Toggle_7.Size = UDim2.new(0, 39, 0, 26)
+Toggle_7.Font = Enum.Font.SourceSans
+Toggle_7.Text = ""
+Toggle_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_7.TextSize = 14.000
 
-UICorner_11.Parent = FistRange
+On_5.Name = "On"
+On_5.Parent = Toggle_7
+On_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+On_5.BackgroundTransparency = 1.000
+On_5.Position = UDim2.new(-0.0146281123, 0, 0.00605773926, 0)
+On_5.Size = UDim2.new(0, 39, 0, 27)
+On_5.Visible = false
+On_5.Font = Enum.Font.SourceSans
+On_5.Text = "On"
+On_5.TextColor3 = Color3.fromRGB(85, 255, 0)
+On_5.TextScaled = true
+On_5.TextSize = 14.000
+On_5.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+On_5.TextWrapped = true
+
+Off_5.Name = "Off"
+Off_5.Parent = Toggle_7
+Off_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Off_5.BackgroundTransparency = 1.000
+Off_5.Position = UDim2.new(-0.0146274567, 0, 0.0060576871, 0)
+Off_5.Size = UDim2.new(0, 39, 0, 27)
+Off_5.Font = Enum.Font.SourceSans
+Off_5.Text = "Off"
+Off_5.TextColor3 = Color3.fromRGB(255, 0, 0)
+Off_5.TextScaled = true
+Off_5.TextSize = 14.000
+Off_5.TextStrokeColor3 = Color3.fromRGB(85, 255, 0)
+Off_5.TextWrapped = true
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = MiscTab
+JumpPower.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+JumpPower.Position = UDim2.new(0.012000002, 0, 0.505903482, 0)
+JumpPower.Size = UDim2.new(0, 582, 0, 32)
+JumpPower.ZIndex = 10
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = "       JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextSize = 25.000
+JumpPower.TextWrapped = true
+JumpPower.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_11.Parent = JumpPower
 
 touch_app_8.Name = "touch_app"
-touch_app_8.Parent = FistRange
+touch_app_8.Parent = JumpPower
 touch_app_8.BackgroundTransparency = 1.000
 touch_app_8.LayoutOrder = 9
 touch_app_8.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
@@ -546,33 +591,7 @@ touch_app_8.Image = "rbxassetid://3926305904"
 touch_app_8.ImageRectOffset = Vector2.new(84, 204)
 touch_app_8.ImageRectSize = Vector2.new(36, 36)
 
-WalkSpeed.Name = "WalkSpeed"
-WalkSpeed.Parent = MiscTab
-WalkSpeed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-WalkSpeed.Position = UDim2.new(0.0136750443, 0, 0.671926677, 0)
-WalkSpeed.Size = UDim2.new(0, 582, 0, 32)
-WalkSpeed.ZIndex = 10
-WalkSpeed.Font = Enum.Font.SourceSans
-WalkSpeed.Text = "       Walkspeed"
-WalkSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
-WalkSpeed.TextSize = 25.000
-WalkSpeed.TextWrapped = true
-WalkSpeed.TextXAlignment = Enum.TextXAlignment.Left
-
-UICorner_12.Parent = WalkSpeed
-
-touch_app_9.Name = "touch_app"
-touch_app_9.Parent = WalkSpeed
-touch_app_9.BackgroundTransparency = 1.000
-touch_app_9.LayoutOrder = 9
-touch_app_9.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
-touch_app_9.Size = UDim2.new(0, 20, 0, 20)
-touch_app_9.ZIndex = 2
-touch_app_9.Image = "rbxassetid://3926305904"
-touch_app_9.ImageRectOffset = Vector2.new(84, 204)
-touch_app_9.ImageRectSize = Vector2.new(36, 36)
-
-TextBox.Parent = WalkSpeed
+TextBox.Parent = JumpPower
 TextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 TextBox.Position = UDim2.new(0.881443322, 0, 0.1875, 0)
 TextBox.Size = UDim2.new(0, 61, 0, 20)
@@ -585,36 +604,36 @@ TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 4)
-UICorner_13.Parent = TextBox
+UICorner_12.CornerRadius = UDim.new(0, 4)
+UICorner_12.Parent = TextBox
 
-JumpPower.Name = "JumpPower"
-JumpPower.Parent = MiscTab
-JumpPower.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-JumpPower.Position = UDim2.new(0.0136750434, 0, 0.834088802, 0)
-JumpPower.Size = UDim2.new(0, 582, 0, 32)
-JumpPower.ZIndex = 10
-JumpPower.Font = Enum.Font.SourceSans
-JumpPower.Text = "       JumpPower"
-JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
-JumpPower.TextSize = 25.000
-JumpPower.TextWrapped = true
-JumpPower.TextXAlignment = Enum.TextXAlignment.Left
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = MiscTab
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WalkSpeed.Position = UDim2.new(0.0136750452, 0, 0.347602367, 0)
+WalkSpeed.Size = UDim2.new(0, 582, 0, 32)
+WalkSpeed.ZIndex = 10
+WalkSpeed.Font = Enum.Font.SourceSans
+WalkSpeed.Text = "       Walkspeed"
+WalkSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.TextSize = 25.000
+WalkSpeed.TextWrapped = true
+WalkSpeed.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_14.Parent = JumpPower
+UICorner_13.Parent = WalkSpeed
 
-touch_app_10.Name = "touch_app"
-touch_app_10.Parent = JumpPower
-touch_app_10.BackgroundTransparency = 1.000
-touch_app_10.LayoutOrder = 9
-touch_app_10.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
-touch_app_10.Size = UDim2.new(0, 20, 0, 20)
-touch_app_10.ZIndex = 2
-touch_app_10.Image = "rbxassetid://3926305904"
-touch_app_10.ImageRectOffset = Vector2.new(84, 204)
-touch_app_10.ImageRectSize = Vector2.new(36, 36)
+touch_app_9.Name = "touch_app"
+touch_app_9.Parent = WalkSpeed
+touch_app_9.BackgroundTransparency = 1.000
+touch_app_9.LayoutOrder = 9
+touch_app_9.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_9.Size = UDim2.new(0, 20, 0, 20)
+touch_app_9.ZIndex = 2
+touch_app_9.Image = "rbxassetid://3926305904"
+touch_app_9.ImageRectOffset = Vector2.new(84, 204)
+touch_app_9.ImageRectSize = Vector2.new(36, 36)
 
-TextBox_2.Parent = JumpPower
+TextBox_2.Parent = WalkSpeed
 TextBox_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 TextBox_2.Position = UDim2.new(0.881443322, 0, 0.1875, 0)
 TextBox_2.Size = UDim2.new(0, 61, 0, 20)
@@ -627,8 +646,8 @@ TextBox_2.TextScaled = true
 TextBox_2.TextSize = 14.000
 TextBox_2.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 4)
-UICorner_15.Parent = TextBox_2
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = TextBox_2
 
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Tabs
@@ -650,7 +669,7 @@ Credits.TextSize = 25.000
 Credits.TextWrapped = true
 Credits.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_16.Parent = Credits
+UICorner_15.Parent = Credits
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = CreditsTab
@@ -665,7 +684,7 @@ Credits_2.TextSize = 25.000
 Credits_2.TextWrapped = true
 Credits_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_17.Parent = Credits_2
+UICorner_16.Parent = Credits_2
 
 TabsMenu.Name = "TabsMenu"
 TabsMenu.Parent = Main
@@ -674,29 +693,27 @@ TabsMenu.Position = UDim2.new(0.0223999992, 0, 0.12602739, 0)
 TabsMenu.Size = UDim2.new(0, 597, 0, 34)
 TabsMenu.ZIndex = 10
 
-UICorner_18.Parent = TabsMenu
+UICorner_17.Parent = TabsMenu
 
-AutoFarm_2.Name = "AutoFarm"
-AutoFarm_2.Parent = TabsMenu
-AutoFarm_2.BackgroundColor3 = Color3.fromRGB(207, 207, 207)
-AutoFarm_2.BackgroundTransparency = 1.000
-AutoFarm_2.Position = UDim2.new(0.0100502511, 0, 0.0654099435, 0)
-AutoFarm_2.Size = UDim2.new(0, 97, 0, 28)
-AutoFarm_2.ZIndex = 20
-AutoFarm_2.Font = Enum.Font.SourceSans
-AutoFarm_2.Text = "Autofarm"
-AutoFarm_2.TextColor3 = Color3.fromRGB(207, 207, 207)
-AutoFarm_2.TextScaled = true
-AutoFarm_2.TextSize = 14.000
-AutoFarm_2.TextWrapped = true
+AimbotTab_2.Name = "AimbotTab"
+AimbotTab_2.Parent = TabsMenu
+AimbotTab_2.BackgroundColor3 = Color3.fromRGB(207, 207, 207)
+AimbotTab_2.BackgroundTransparency = 1.000
+AimbotTab_2.Position = UDim2.new(0.0100502511, 0, 0.0654099435, 0)
+AimbotTab_2.Size = UDim2.new(0, 83, 0, 28)
+AimbotTab_2.Font = Enum.Font.SourceSans
+AimbotTab_2.Text = "Aimbot"
+AimbotTab_2.TextColor3 = Color3.fromRGB(207, 207, 207)
+AimbotTab_2.TextScaled = true
+AimbotTab_2.TextSize = 14.000
+AimbotTab_2.TextWrapped = true
 
 Visuals.Name = "Visuals"
 Visuals.Parent = TabsMenu
 Visuals.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Visuals.BackgroundTransparency = 1.000
-Visuals.Position = UDim2.new(0.17252931, 0, 0.0654099435, 0)
+Visuals.Position = UDim2.new(0.149078727, 0, 0.0654099435, 0)
 Visuals.Size = UDim2.new(0, 79, 0, 28)
-Visuals.ZIndex = 20
 Visuals.Font = Enum.Font.SourceSans
 Visuals.Text = "Visuals"
 Visuals.TextColor3 = Color3.fromRGB(207, 207, 207)
@@ -708,9 +725,8 @@ Misc.Name = "Misc"
 Misc.Parent = TabsMenu
 Misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Misc.BackgroundTransparency = 1.000
-Misc.Position = UDim2.new(0.304857641, 0, 0.0654099435, 0)
+Misc.Position = UDim2.new(0.281407028, 0, 0.0654099435, 0)
 Misc.Size = UDim2.new(0, 52, 0, 28)
-Misc.ZIndex = 20
 Misc.Font = Enum.Font.SourceSans
 Misc.Text = "Misc"
 Misc.TextColor3 = Color3.fromRGB(207, 207, 207)
@@ -722,9 +738,8 @@ Cedits.Name = "Cedits"
 Cedits.Parent = TabsMenu
 Cedits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Cedits.BackgroundTransparency = 1.000
-Cedits.Position = UDim2.new(0.391959816, 0, 0.0654099435, 0)
+Cedits.Position = UDim2.new(0.368509203, 0, 0.0654099435, 0)
 Cedits.Size = UDim2.new(0, 79, 0, 28)
-Cedits.ZIndex = 20
 Cedits.Font = Enum.Font.SourceSans
 Cedits.Text = "Credits"
 Cedits.TextColor3 = Color3.fromRGB(207, 207, 207)
@@ -744,240 +759,351 @@ Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
 -- Scripts:
 
-local function HNUPXN_fake_script() -- Toggle.LocalScript 
+local function VROICF_fake_script() -- Toggle.LocalScript 
 	local script = Instance.new('LocalScript', Toggle)
 
-	local AutoFarmToggled = false
+	local SilentAimToggled = false
 
-	script.Parent.Parent.Parent.AutoFarm.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.SilentAim.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
-			AutoFarmToggled = true
+			SilentAimToggled = true
 			script.Parent.On.Visible = true
 			script.Parent.Off.Visible = false
 		elseif script.Parent.On.Visible == true then
-			AutoFarmToggled = false
+			SilentAimToggled = false
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
 
 		wait()
 
-		if AutoFarmToggled == true then
-			repeat
-				wait()
-			until game:IsLoaded()
-			local gm = getrawmetatable(game)
-			setreadonly(gm, false)
-			local namecall = gm.__namecall
-			gm.__namecall =
-				newcclosure(
-					function(self, ...)
-					local args = {...}
-					if not checkcaller() and getnamecallmethod() == "FireServer" and tostring(self) == "MainEvent" then
-						if tostring(getcallingscript()) ~= "Framework" then
-							return
-						end
-					end
-					if not checkcaller() and getnamecallmethod() == "Kick" then
-						return
-					end
-					return namecall(self, unpack(args))
-				end
-				)
-
-			local LocalPlayer = game:GetService("Players").LocalPlayer
-
-			function gettarget()
-				local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
-				local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
-				local maxdistance = math.huge
-				local target
-				for i, v in pairs(game:GetService("Workspace").Cashiers:GetChildren()) do
-					if v:FindFirstChild("Head") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
-						local distance = (HumanoidRootPart.Position - v.Head.Position).magnitude
-						if distance < maxdistance then
-							target = v
-							maxdistance = distance
-						end
+		if SilentAimToggled == true then
+			local CurrentCamera = workspace.CurrentCamera
+			local Players = game.GetService(game, "Players")
+			local LocalPlayer = Players.LocalPlayer
+			local Mouse = LocalPlayer:GetMouse()
+			function ClosestPlayer()
+				local MaxDist, Closest = math.huge
+				for I,V in pairs(Players.GetPlayers(Players)) do
+					if V == LocalPlayer then continue end
+					if V.Team == LocalPlayer then continue end
+					if not V.Character then continue end
+					local Head = V.Character.FindFirstChild(V.Character, "Head")
+					if not Head then continue end
+					local Pos, Vis = CurrentCamera.WorldToScreenPoint(CurrentCamera, Head.Position)
+					if not Vis then continue end
+					local MousePos, TheirPos = Vector2.new(Mouse.X, Mouse.Y), Vector2.new(Pos.X, Pos.Y)
+					local Dist = (TheirPos - MousePos).Magnitude
+					if Dist < MaxDist then
+						MaxDist = Dist
+						Closest = V
+						print("working")
 					end
 				end
-				return target
+				return Closest
 			end
-
-			for i, v in pairs(workspace:GetDescendants()) do
-				if v:IsA("Seat") then
-					v:Destroy()
-				end
-			end
-
-			shared.MoneyFarm = true -- Just execute shared.MoneyFarm = false to stop farming
-
-			while shared.MoneyFarm do
-				wait()
-				local Target = gettarget()
-				repeat
-					wait()
-					pcall(
-						function()
-							local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
-							local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
-							local Combat = LocalPlayer.Backpack:FindFirstChild("Combat") or Character:FindFirstChild("Combat")
-							if not Combat then
-								Character:FindFirstChild("Humanoid").Health = 0
-								return
-							end
-							HumanoidRootPart.CFrame = Target.Head.CFrame * CFrame.new(0, -2.5, 3)
-							Combat.Parent = Character
-							Combat:Activate()
-						end
-					)
-				until not Target or Target.Humanoid.Health < 0
-				for i, v in pairs(game:GetService("Workspace").Ignored.Drop:GetDescendants()) do
-					if v:IsA("ClickDetector") and v.Parent and v.Parent.Name:find("Money") then
-						local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
-						local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
-						if (v.Parent.Position - HumanoidRootPart.Position).magnitude <= 18 then
-							repeat
-								wait()
-								fireclickdetector(v)
-							until not v or not v.Parent.Parent
-						end
+			local MT = getrawmetatable(game)
+			local OldNC = MT.__namecall
+			local OldIDX = MT.__index
+			setreadonly(MT, false)
+			MT.__namecall = newcclosure(function(self, ...)
+				local Args, Method = {...}, getnamecallmethod()
+				if Method == "FindPartOnRayWithIgnoreList" and not checkcaller() then
+					local CP = ClosestPlayer()
+					if CP and CP.Character and CP.Character.FindFirstChild(CP.Character, "Head") then
+						Args[1] = Ray.new(CurrentCamera.CFrame.Position, (CP.Character.Head.Position - CurrentCamera.CFrame.Position).Unit * 1000)
+						return OldNC(self, unpack(Args))
 					end
 				end
-				wait(1)
-			end
+				return OldNC(self, ...)
+			end)
+			MT.__index = newcclosure(function(self, K)
+				if K == "Clips" then
+					return workspace.Map
+				end
+				return OldIDX(self, K)
+			end)
+			setreadonly(MT, true)
 		end
 
-		if AutoFarmToggled == false then
-			shared.MoneyFarm = false
+		if SilentAimToggled == false then
+
 		end
 	end)
 end
-coroutine.wrap(HNUPXN_fake_script)()
-local function HWCATCK_fake_script() -- Toggle_2.LocalScript 
+coroutine.wrap(VROICF_fake_script)()
+local function CMFPWS_fake_script() -- Toggle_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_2)
 
-	local HospitalAutoFarmToggled = false
+	local WallBangToggled = false
 
-	script.Parent.Parent.Parent.HospitalAutoFarm.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.WallBang.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
-			HospitalAutoFarmToggled = true
+			WallBangToggled = true
 			script.Parent.On.Visible = true
 			script.Parent.Off.Visible = false
 		elseif script.Parent.On.Visible == true then
-			HospitalAutoFarmToggled = false
+			WallBangToggled = false
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
 
 		wait()
 
-		if HospitalAutoFarmToggled == true then
-
-			_G.toggle = true -- if you want to turn it off change to false and re-execute
-			game:getService("RunService"):BindToRenderStep(
-			"",
-			0,
-			function()
-				if not game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid") then
-					return
-				end
-				while wait() do
-					if _G.toggle == true then
-						game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
-					end
-				end
-			end
-			)
-			while wait(1) do
-				if _G.toggle == true then
-					pcall(
-						function()
-							for i, v in pairs(game:GetService("Workspace").Ignored.HospitalJob:GetChildren()) do
-								if v:IsA("Model") then
-									_G.patient = v.Name
-									game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
-										game.Workspace.Ignored.HospitalJob[v.Name].HumanoidRootPart.CFrame *
-										CFrame.new(Vector3.new(0, -6.5, 0), Vector3.new(0, 100, 0))
-								end
-							end
-							for i, v in pairs(game.Workspace.Ignored.HospitalJob:GetChildren()) do
-								if v.Name == "Can I get the Red bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Red.ClickDetector
-									fireclickdetector(clickdetector)
-								elseif v.Name == "Can I get the Blue bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Blue.ClickDetector
-									fireclickdetector(clickdetector)
-								elseif v.Name == "Can I get the Green bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Green.ClickDetector
-									fireclickdetector(clickdetector)
-								end
-							end
-							local clickdetector2 = game:GetService("Workspace").Ignored.HospitalJob[_G.patient].ClickDetector
-							fireclickdetector(clickdetector2)
-						end
-					)
-				elseif _G.toggle == false then
-					return
-				end
-			end
+		if WallBangToggled == true then
+			_G.Enable = true
 		end
 
-		if HospitalAutoFarmToggled == false then
-
-			_G.toggle = false -- if you want to turn it off change to false and re-execute
-			game:getService("RunService"):BindToRenderStep(
-			"",
-			0,
-			function()
-				if not game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid") then
-					return
-				end
-				while wait() do
-					if _G.toggle == true then
-						game.Players.LocalPlayer.Character:findFirstChildOfClass("Humanoid"):ChangeState(11)
-					end
-				end
-			end
-			)
-			while wait(1) do
-				if _G.toggle == true then
-					pcall(
-						function()
-							for i, v in pairs(game:GetService("Workspace").Ignored.HospitalJob:GetChildren()) do
-								if v:IsA("Model") then
-									_G.patient = v.Name
-									game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame =
-										game.Workspace.Ignored.HospitalJob[v.Name].HumanoidRootPart.CFrame *
-										CFrame.new(Vector3.new(0, -6.5, 0), Vector3.new(0, 100, 0))
-								end
-							end
-							for i, v in pairs(game.Workspace.Ignored.HospitalJob:GetChildren()) do
-								if v.Name == "Can I get the Red bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Red.ClickDetector
-									fireclickdetector(clickdetector)
-								elseif v.Name == "Can I get the Blue bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Blue.ClickDetector
-									fireclickdetector(clickdetector)
-								elseif v.Name == "Can I get the Green bottle" then
-									local clickdetector = game.Workspace.Ignored.HospitalJob.Green.ClickDetector
-									fireclickdetector(clickdetector)
-								end
-							end
-							local clickdetector2 = game:GetService("Workspace").Ignored.HospitalJob[_G.patient].ClickDetector
-							fireclickdetector(clickdetector2)
-						end
-					)
-				elseif _G.toggle == false then
-					return
-				end
-			end
+		if WallBangToggled == false then
+			_G.Enable = not _G.Enable
 		end
+
+		local MT = getrawmetatable(game)
+		local OldIndex = MT.__index
+		setreadonly(MT, false)
+		MT.__index = newcclosure(function(A, B)
+			if B == "Clips" then
+				if _G.Enable then
+					return workspace.Map
+				end
+			end
+			return OldIndex(A, B)
+		end)
 	end)
 end
-coroutine.wrap(HWCATCK_fake_script)()
-local function IOOMDL_fake_script() -- Toggle_3.LocalScript 
+coroutine.wrap(CMFPWS_fake_script)()
+local function INCPR_fake_script() -- Toggle_3.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_3)
+
+	local AimbotToggled = false
+
+	script.Parent.Parent.Parent.Aimbot.MouseButton1Click:Connect(function()
+		if script.Parent.On.Visible == false then
+			AimbotToggled = true
+			script.Parent.On.Visible = true
+			script.Parent.Off.Visible = false
+		elseif script.Parent.On.Visible == true then
+			AimbotToggled = false
+			script.Parent.On.Visible = false
+			script.Parent.Off.Visible = true
+		end
+
+		wait()
+
+		if AimbotToggled == true then
+			aimbotting = true
+		end
+
+		if AimbotToggled == false then
+			aimbotting = false
+		end
+
+		local safe = setmetatable({}, {
+			__index = function(_, k)
+				return game:GetService(k)
+			end
+		})
+
+		local movethemouse = mousemoverel or Input.MoveMouse --Mouse Move Function.
+		local leftclickme = nil --Auto Shoot Key Press Thingy.
+		local aimbotting = false -- Toggles.
+		local autoshoot = false
+		local teamcheck = false
+		local visiblecheck = true
+		_G.xaimoffset = 0 --_G.xaimoffset = -25
+		_G.maxdistfromcross = 100
+
+		local cam = safe.Workspace.CurrentCamera -- Current Camera
+		local lp = safe.Players.LocalPlayer -- Local Player
+		local lpc = safe.Players.LocalPlayer.Character -- Local Player Character
+
+		local wtos = function(v) -- World To Screen
+			return cam:WorldToScreenPoint(v)
+		end
+
+		local distFromCenter = function(x, y)
+			local vps = cam.ViewportSize -- Get ViewPortSize.
+			local vpsx = vps.X
+			local vpsy = vps.Y
+			local screencenterx = vpsx/2
+			local screencentery = vpsy/2
+			local xdist = (x - screencenterx) -- X Distance From Mid Screen.
+			local ydist = (y - screencentery) -- Y Distance From Mid Screen.
+			local Hypotenuse = math.sqrt(math.pow(xdist, 2) + math.pow(ydist, 2))
+			return Hypotenuse
+		end
+
+		local function inlos(p, ...) -- In line of site?
+			return #cam:GetPartsObscuringTarget({p}, {cam, lp.Character, ...}) == 0
+		end
+
+		local getclosestPlayer = function() -- Checks the closest player based on Hypotenuse.
+			local plrs, v = safe.Players:GetPlayers()
+			local maxdist = 75
+			local dist = math.huge
+			local plr = "none"
+			for i = 1, #plrs do
+				v = plrs[i]
+				if v ~= safe.Players.LocalPlayer then
+					if v.Character then
+						if v.TeamColor ~= safe.Players.LocalPlayer.TeamColor and teamcheck then
+							local hpos = wtos(v.Character.Head.Position)
+							local idist = distFromCenter(hpos.X, hpos.Y)
+							if idist < dist and idist < _G.maxdistfromcross then
+								dist = idist
+								plr = v
+							end
+						elseif not teamcheck then
+							local hpos = wtos(v.Character.Head.Position)
+							local idist = distFromCenter(hpos.X, hpos.Y)
+							if idist < dist and idist < _G.maxdistfromcross then
+								dist = idist
+								plr = v
+							end
+						end
+					end
+				end
+			end
+			return plr, dist
+		end
+
+		local AimAt = function(x, y)
+			local vps = cam.ViewportSize
+			local vpsx = vps.X
+			local vpsy = vps.Y
+			local screencenterx = vpsx/2
+			local screencentery = vpsy/2
+			local aimspeed = 5
+			local aimatx
+			local aimaty
+
+			if x ~= 0 then
+				if x > screencenterx then
+					aimatx = -(screencenterx - x)
+					aimatx = aimatx/aimspeed
+					if aimatx + screencenterx > screencenterx * 2 then
+						aimatx = 0
+					end
+				end
+				if x < screencenterx then
+					aimatx = x - screencenterx
+					aimatx = aimatx/aimspeed
+					if aimatx + screencenterx < 0 then
+						aimatx = 0
+					end
+				end
+			end
+
+			if y ~= 0 then
+				if y > screencentery then
+					aimaty = -(screencentery - y)
+					aimaty = aimaty/aimspeed
+					if aimaty + screencentery > screencentery * 2 then
+						aimaty = 0
+					end
+				end
+				if y < screencentery then
+					aimaty = y - screencentery
+					aimaty = aimaty/aimspeed
+					if aimaty + screencentery < 0 then
+						aimaty = 0
+					end
+				end
+			end
+			return aimatx, aimaty
+		end
+
+		local MouseTests = function()
+			local player = safe.Players.LocalPlayer
+			local mouse = player:GetMouse()
+			local screensizex = mouse.ViewSizeX
+			local screensizey = mouse.ViewSizeY
+			local midx = screensizex/2
+			local midy = screensizey/2
+			local mousex = mouse.X
+			local mousey = mouse.Y
+			local moveamountx = midx - mousex
+			local moveamounty = midy - mousey
+			movethemouse(moveamountx, moveamounty)
+			local camera = safe.Workspace.Camera
+			local newmousex = safe.Players.LocalPlayer:GetMouse().X
+			local newmousey = safe.Players.LocalPlayer:GetMouse().Y
+			local closestplayer = getclosestPlayer()
+			if player.Character.Humanoid.Health > 0 then
+				if closestplayer ~= "none" then
+					if inlos(closestplayer.Character.Head.Position, closestplayer.Character) and visiblecheck then
+						local closesthead = closestplayer.Character.Head
+						local p = camera:WorldToScreenPoint(closesthead.Position)
+						local xdistancetohead, ydistancetohead = AimAt(p.X + _G.xaimoffset, p.Y + 32)
+						movethemouse(xdistancetohead, ydistancetohead)
+						if autoshoot then
+							movethemouse(xdistancetohead, ydistancetohead)
+							wait(1)
+							Input.LeftClick(MOUSE_DOWN)
+							wait()
+						end
+					elseif not visiblecheck then
+						local closesthead = closestplayer.Character.Head
+						local p = camera:WorldToScreenPoint(closesthead.Position)
+						local xdistancetohead, ydistancetohead = AimAt(p.X + _G.xaimoffset, p.Y + 32)
+						movethemouse(xdistancetohead, ydistancetohead)
+					end
+				end
+			end
+		end
+
+		game:GetService('RunService').Stepped:connect(function()
+			if aimbotting then
+				--MouseTests()
+			end
+		end)
+
+
+		local plr = safe.Players.LocalPlayer
+		local mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+			if key == "/////" then
+				aimbotting = not aimbotting
+				print("Aimbotting: " .. tostring(aimbotting))
+				MouseTests()
+			end
+
+			if key == "m" then
+				teamcheck = not teamcheck
+				print("Team Check: " .. tostring(teamcheck))
+			end
+		end)
+
+
+
+
+		MB2Held = false
+
+		function onKeyPress(inputObject,gameProcessed)
+			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
+				MB2Held = true
+				while MB2Held do
+					if aimbotting then
+						MouseTests()
+					end
+					wait()
+				end
+			end
+		end
+
+		function onKeyRelease(inputObject,gameProcessed)
+			if inputObject.UserInputType == Enum.UserInputType.MouseButton2 then
+				MB2Held = false
+			end
+		end
+
+		game:GetService("UserInputService").InputBegan:connect(onKeyPress)
+		game:GetService("UserInputService").InputEnded:connect(onKeyRelease)
+	end)
+end
+coroutine.wrap(INCPR_fake_script)()
+local function SNFQ_fake_script() -- Toggle_4.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_4)
 
 	script.Parent.Parent.Parent.Esp.MouseButton1Click:Connect(function()
 		-- Made by Blissful#4992
@@ -1077,9 +1203,9 @@ local function IOOMDL_fake_script() -- Toggle_3.LocalScript
 		end)
 	end)
 end
-coroutine.wrap(IOOMDL_fake_script)()
-local function FEWXE_fake_script() -- Toggle_4.LocalScript 
-	local script = Instance.new('LocalScript', Toggle_4)
+coroutine.wrap(SNFQ_fake_script)()
+local function QSOYVZQ_fake_script() -- Toggle_5.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_5)
 
 	script.Parent.Parent.Parent.Tracers.MouseButton1Click:Connect(function()
 		local function API_Check()
@@ -1325,9 +1451,9 @@ local function FEWXE_fake_script() -- Toggle_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FEWXE_fake_script)()
-local function WLUQWR_fake_script() -- Toggle_5.LocalScript 
-	local script = Instance.new('LocalScript', Toggle_5)
+coroutine.wrap(QSOYVZQ_fake_script)()
+local function IRNN_fake_script() -- Toggle_6.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_6)
 
 	local FlyToggled = false
 
@@ -1444,9 +1570,9 @@ local function WLUQWR_fake_script() -- Toggle_5.LocalScript
 		FLY()
 	end)
 end
-coroutine.wrap(WLUQWR_fake_script)()
-local function SQFGWYX_fake_script() -- Toggle_6.LocalScript 
-	local script = Instance.new('LocalScript', Toggle_6)
+coroutine.wrap(IRNN_fake_script)()
+local function IXIE_fake_script() -- Toggle_7.LocalScript 
+	local script = Instance.new('LocalScript', Toggle_7)
 
 	local NoclipToggled = false
 
@@ -1496,66 +1622,8 @@ local function SQFGWYX_fake_script() -- Toggle_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SQFGWYX_fake_script)()
-local function BHSOKJS_fake_script() -- EscapePrison.LocalScript 
-	local script = Instance.new('LocalScript', EscapePrison)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		return(function(IlIllIllII,IlllIIllIII,IlllIIllIII)local lllllIIIllllllIl=string.char;local lllllllIIIlIl=string.sub;local IIIIIIIllIlllllIIl=table.concat;local IlIlIIIII=math.ldexp;local IIlIIIlIllIlllIIlI=getfenv or function()return _ENV end;local IlIlIlIIlllIIIIlIlIlllIl=select;local lIlIIlllIIIlIllIlIIIlIlI=unpack or table.unpack;local llIIIIllIlllIIIllIIllIl=tonumber;local function IIIIIlIIlllIlIIlIIIIllI(lllllIllIIlIlIll)local IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII,IllIIIIlllIlIllIIllI="","",{}local lIlllIlIIlllIIl=256;local lIlIIlllIIIlIllIlIIIlIlI={}for IlllIIllIII=0,lIlllIlIIlllIIl-1 do lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]=lllllIIIllllllIl(IlllIIllIII)end;local IlllIIllIII=1;local function IlIllIllII()local IlllIIIlIllllIlIIIIIlIlII=llIIIIllIlllIIIllIIllIl(lllllllIIIlIl(lllllIllIIlIlIll,IlllIIllIII,IlllIIllIII),36)IlllIIllIII=IlllIIllIII+1;local llIlIlIIIllllIIlIllII=llIIIIllIlllIIIllIIllIl(lllllllIIIlIl(lllllIllIIlIlIll,IlllIIllIII,IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII-1),36)IlllIIllIII=IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII;return llIlIlIIIllllIIlIllII end;IlllIIIlIllllIlIIIIIlIlII=lllllIIIllllllIl(IlIllIllII())IllIIIIlllIlIllIIllI[1]=IlllIIIlIllllIlIIIIIlIlII;while IlllIIllIII<#lllllIllIIlIlIll do local IlllIIllIII=IlIllIllII()if lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]then llIlIlIIIllllIIlIllII=lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]else llIlIlIIIllllIIlIllII=IlllIIIlIllllIlIIIIIlIlII..lllllllIIIlIl(IlllIIIlIllllIlIIIIIlIlII,1,1)end;lIlIIlllIIIlIllIlIIIlIlI[lIlllIlIIlllIIl]=IlllIIIlIllllIlIIIIIlIlII..lllllllIIIlIl(llIlIlIIIllllIIlIllII,1,1)IllIIIIlllIlIllIIllI[#IllIIIIlllIlIllIIllI+1],IlllIIIlIllllIlIIIIIlIlII,lIlllIlIIlllIIl=llIlIlIIIllllIIlIllII,llIlIlIIIllllIIlIllII,lIlllIlIIlllIIl+1 end;return table.concat(IllIIIIlllIlIllIIllI)end;local llIIIIllIlllIIIllIIllIl=IIIIIlIIlllIlIIlIIIIllI('22L22H27522G22B27522H21H21I21K21P21621921721C21J21Q22G27427521Q21K21G21O22G22M2791H2192192151U21O21922G23C27921D27W21521622R23A23A21521K27F21O21N27I23B21M21I21G23A21721K21A23A1J21A22W1F21A22X21K1L22827922322C27922G29027622H22J27923D29629422I22H22327529D27M27922H27429429J22H29429I29N27529829N29429M29J29W29N');local IlllIIllIII=(bit or bit32);local IllIIIIlllIlIllIIllI=IlllIIllIII and IlllIIllIII.bxor or function(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII)local llIlIlIIIllllIIlIllII,IllIIIIlllIlIllIIllI,lllllllIIIlIl=1,0,10 while IlllIIllIII>0 and IlllIIIlIllllIlIIIIIlIlII>0 do local lllllllIIIlIl,lIlllIlIIlllIIl=IlllIIllIII%2,IlllIIIlIllllIlIIIIIlIlII%2 if lllllllIIIlIl~=lIlllIlIIlllIIl then IllIIIIlllIlIllIIllI=IllIIIIlllIlIllIIllI+llIlIlIIIllllIIlIllII end IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII=(IlllIIllIII-lllllllIIIlIl)/2,(IlllIIIlIllllIlIIIIIlIlII-lIlllIlIIlllIIl)/2,llIlIlIIIllllIIlIllII*2 end if IlllIIllIII<IlllIIIlIllllIlIIIIIlIlII then IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII end while IlllIIllIII>0 do local IlllIIIlIllllIlIIIIIlIlII=IlllIIllIII%2 if IlllIIIlIllllIlIIIIIlIlII>0 then IllIIIIlllIlIllIIllI=IllIIIIlllIlIllIIllI+llIlIlIIIllllIIlIllII end IlllIIllIII,llIlIlIIIllllIIlIllII=(IlllIIllIII-IlllIIIlIllllIlIIIIIlIlII)/2,llIlIlIIIllllIIlIllII*2 end return IllIIIIlllIlIllIIllI end local function llIlIlIIIllllIIlIllII(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII,llIlIlIIIllllIIlIllII)if llIlIlIIIllllIIlIllII then local IlllIIllIII=(IlllIIIlIllllIlIIIIIlIlII/2^(IlllIIllIII-1))%2^((llIlIlIIIllllIIlIllII-1)-(IlllIIllIII-1)+1);return IlllIIllIII-IlllIIllIII%1;else local IlllIIllIII=2^(IlllIIllIII-1);return(IlllIIIlIllllIlIIIIIlIlII%(IlllIIllIII+IlllIIllIII)>=IlllIIllIII)and 1 or 0;end;end;local IlllIIllIII=1;local function IlllIIIlIllllIlIIIIIlIlII()local IlllIIIlIllllIlIIIIIlIlII,lIlllIlIIlllIIl,llIlIlIIIllllIIlIllII,lllllllIIIlIl=IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+3);IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlllIIIlIllllIlIIIIIlIlII,89)lIlllIlIIlllIIl=IllIIIIlllIlIllIIllI(lIlllIlIIlllIIl,89)llIlIlIIIllllIIlIllII=IllIIIIlllIlIllIIllI(llIlIlIIIllllIIlIllII,89)lllllllIIIlIl=IllIIIIlllIlIllIIllI(lllllllIIIlIl,89)IlllIIllIII=IlllIIllIII+4;return(lllllllIIIlIl*16777216)+(llIlIlIIIllllIIlIllII*65536)+(lIlllIlIIlllIIl*256)+IlllIIIlIllllIlIIIIIlIlII;end;local function lllllIllIIlIlIll()local IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII),89);IlllIIllIII=IlllIIllIII+1;return IlllIIIlIllllIlIIIIIlIlII;end;local function lIlllIlIIlllIIl()local IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII=IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+2);IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlllIIIlIllllIlIIIIIlIlII,89)llIlIlIIIllllIIlIllII=IllIIIIlllIlIllIIllI(llIlIlIIIllllIIlIllII,89)IlllIIllIII=IlllIIllIII+2;return(llIlIlIIIllllIIlIllII*256)+IlllIIIlIllllIlIIIIIlIlII;end;local function IIIIIlIIlllIlIIlIIIIllI()local IllIIIIlllIlIllIIllI=IlllIIIlIllllIlIIIIIlIlII();local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII();local lllllllIIIlIl=1;local IllIIIIlllIlIllIIllI=(llIlIlIIIllllIIlIllII(IlllIIllIII,1,20)*(2^32))+IllIIIIlllIlIllIIllI;local IlllIIIlIllllIlIIIIIlIlII=llIlIlIIIllllIIlIllII(IlllIIllIII,21,31);local IlllIIllIII=((-1)^llIlIlIIIllllIIlIllII(IlllIIllIII,32));if(IlllIIIlIllllIlIIIIIlIlII==0)then if(IllIIIIlllIlIllIIllI==0)then return IlllIIllIII*0;else IlllIIIlIllllIlIIIIIlIlII=1;lllllllIIIlIl=0;end;elseif(IlllIIIlIllllIlIIIIIlIlII==2047)then return(IllIIIIlllIlIllIIllI==0)and(IlllIIllIII*(1/0))or(IlllIIllIII*(0/0));end;return IlIlIIIII(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII-1023)*(lllllllIIIlIl+(IllIIIIlllIlIllIIllI/(2^52)));end;local IlIlIIIII=IlllIIIlIllllIlIIIIIlIlII;local function IIlIIlIlIlIIIIIIlIlllI(IlllIIIlIllllIlIIIIIlIlII)local llIlIlIIIllllIIlIllII;if(not IlllIIIlIllllIlIIIIIlIlII)then IlllIIIlIllllIlIIIIIlIlII=IlIlIIIII();if(IlllIIIlIllllIlIIIIIlIlII==0)then return'';end;end;llIlIlIIIllllIIlIllII=lllllllIIIlIl(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII-1);IlllIIllIII=IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII;local IlllIIIlIllllIlIIIIIlIlII={}for IlllIIllIII=1,#llIlIlIIIllllIIlIllII do IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=lllllIIIllllllIl(IllIIIIlllIlIllIIllI(IlIllIllII(lllllllIIIlIl(llIlIlIIIllllIIlIllII,IlllIIllIII,IlllIIllIII)),89))end return IIIIIIIllIlllllIIl(IlllIIIlIllllIlIIIIIlIlII);end;local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII;local function IlIlIIIII(...)return{...},IlIlIlIIlllIIIIlIlIlllIl('#',...)end local function lllllIIIllllllIl()local IlIllIllII={};local llIIIIllIlllIIIllIIllIl={};local IlllIIllIII={};local IlIlIlIIlllIIIIlIlIlllIl={[#{"1 + 1 = 111";"1 + 1 = 111";}]=llIIIIllIlllIIIllIIllIl,[#{{916;203;180;55};"1 + 1 = 111";"1 + 1 = 111";}]=nil,[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]=IlllIIllIII,[#{"1 + 1 = 111";}]=IlIllIllII,};local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII()local lllllllIIIlIl={}for llIlIlIIIllllIIlIllII=1,IlllIIllIII do local IlllIIIlIllllIlIIIIIlIlII=lllllIllIIlIlIll();local IlllIIllIII;if(IlllIIIlIllllIlIIIIIlIlII==0)then IlllIIllIII=(lllllIllIIlIlIll()~=0);elseif(IlllIIIlIllllIlIIIIIlIlII==2)then IlllIIllIII=IIIIIlIIlllIlIIlIIIIllI();elseif(IlllIIIlIllllIlIIIIIlIlII==1)then IlllIIllIII=IIlIIlIlIlIIIIIIlIlllI();end;lllllllIIIlIl[llIlIlIIIllllIIlIllII]=IlllIIllIII;end;for llIIIIllIlllIIIllIIllIl=1,IlllIIIlIllllIlIIIIIlIlII()do local IlllIIllIII=lllllIllIIlIlIll();if(llIlIlIIIllllIIlIllII(IlllIIllIII,1,1)==0)then local IllIIIIlllIlIllIIllI=llIlIlIIIllllIIlIllII(IlllIIllIII,2,3);local lIlIIlllIIIlIllIlIIIlIlI=llIlIlIIIllllIIlIllII(IlllIIllIII,4,6);local IlllIIllIII={lIlllIlIIlllIIl(),lIlllIlIIlllIIl(),nil,nil};if(IllIIIIlllIlIllIIllI==0)then IlllIIllIII[3]=lIlllIlIIlllIIl();IlllIIllIII[4]=lIlllIlIIlllIIl();elseif(IllIIIIlllIlIllIIllI==1)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII();elseif(IllIIIIlllIlIllIIllI==2)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII()-(2^16)elseif(IllIIIIlllIlIllIIllI==3)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII()-(2^16)IlllIIllIII[4]=lIlllIlIIlllIIl();end;if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,1,1)==1)then IlllIIllIII[2]=lllllllIIIlIl[IlllIIllIII[2]]end if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,2,2)==1)then IlllIIllIII[3]=lllllllIIIlIl[IlllIIllIII[3]]end if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,3,3)==1)then IlllIIllIII[4]=lllllllIIIlIl[IlllIIllIII[4]]end IlIllIllII[llIIIIllIlllIIIllIIllIl]=IlllIIllIII;end end;for IlllIIllIII=1,IlllIIIlIllllIlIIIIIlIlII()do llIIIIllIlllIIIllIIllIl[IlllIIllIII-1]=lllllIIIllllllIl();end;IlIlIlIIlllIIIIlIlIlllIl[3]=lllllIllIIlIlIll();return IlIlIlIIlllIIIIlIlIlllIl;end;local function IIIIIIIllIlllllIIl(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII,IlIllIllII)IlllIIllIII=(IlllIIllIII==true and lllllIIIllllllIl())or IlllIIllIII;return(function(...)local lIlllIlIIlllIIl=IlllIIllIII[1];local IllIIIIlllIlIllIIllI=IlllIIllIII[3];local IlllIIllIII=IlllIIllIII[2];local llIIIIllIlllIIIllIIllIl=IlIlIIIII local llIlIlIIIllllIIlIllII=1;local lllllllIIIlIl=-1;local IIIIIlIIlllIlIIlIIIIllI={};local lllllIIIllllllIl={...};local lllllIllIIlIlIll=IlIlIlIIlllIIIIlIlIlllIl('#',...)-1;local IlllIIllIII={};local IlllIIIlIllllIlIIIIIlIlII={};for IlllIIllIII=0,lllllIllIIlIlIll do if(IlllIIllIII>=IllIIIIlllIlIllIIllI)then IIIIIlIIlllIlIIlIIIIllI[IlllIIllIII-IllIIIIlllIlIllIIllI]=lllllIIIllllllIl[IlllIIllIII+1];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=lllllIIIllllllIl[IlllIIllIII+#{{310;347;720;236};}];end;end;local IlllIIllIII=lllllIllIIlIlIll-IllIIIIlllIlIllIIllI+1 local IlllIIllIII;local IllIIIIlllIlIllIIllI;while true do IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[1];if IllIIIIlllIlIllIIllI<=7 then if IllIIIIlllIlIllIIllI<=3 then if IllIIIIlllIlIllIIllI<=1 then if IllIIIIlllIlIllIIllI>0 then local IllIIIIlllIlIllIIllI=IlllIIllIII[2];local llIlIlIIIllllIIlIllII=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI+1]=llIlIlIIIllllIIlIllII;IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=llIlIlIIIllllIIlIllII[IlllIIllIII[4]];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];end;elseif IllIIIIlllIlIllIIllI>2 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);end;elseif IllIIIIlllIlIllIIllI<=5 then if IllIIIIlllIlIllIIllI>4 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];else do return end;end;elseif IllIIIIlllIlIllIIllI>6 then local IlllIIllIII=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII+1,lllllllIIIlIl))else local IlllIIllIII=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII+1,lllllllIIIlIl))end;elseif IllIIIIlllIlIllIIllI<=11 then if IllIIIIlllIlIllIIllI<=9 then if IllIIIIlllIlIllIIllI>8 then local llIlIlIIIllllIIlIllII=IlllIIllIII[2];local IllIIIIlllIlIllIIllI=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII+1]=IllIIIIlllIlIllIIllI;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII[4]];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();end;elseif IllIIIIlllIlIllIIllI==10 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();else local llIlIlIIIllllIIlIllII=IlllIIllIII[2]local IllIIIIlllIlIllIIllI,IlllIIllIII=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII+1,IlllIIllIII[3])))lllllllIIIlIl=IlllIIllIII+llIlIlIIIllllIIlIllII-1 local IlllIIllIII=0;for llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII,lllllllIIIlIl do IlllIIllIII=IlllIIllIII+1;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII];end;end;elseif IllIIIIlllIlIllIIllI<=13 then if IllIIIIlllIlIllIIllI>12 then local lllllIllIIlIlIll;local IIIIIlIIlllIlIIlIIIIllI,IlIlIlIIlllIIIIlIlIlllIl;local lllllIIIllllllIl;local IllIIIIlllIlIllIIllI;IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2];lllllIIIllllllIl=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI+1]=lllllIIIllllllIl;IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=lllllIIIllllllIl[IlllIIllIII[4]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2]IIIIIlIIlllIlIIlIIIIllI,IlIlIlIIlllIIIIlIlIlllIl=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IllIIIIlllIlIllIIllI+1,IlllIIllIII[3])))lllllllIIIlIl=IlIlIlIIlllIIIIlIlIlllIl+IllIIIIlllIlIllIIllI-1 lllllIllIIlIlIll=0;for IlllIIllIII=IllIIIIlllIlIllIIllI,lllllllIIIlIl do lllllIllIIlIlIll=lllllIllIIlIlIll+1;IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IIIIIlIIlllIlIIlIIIIllI[lllllIllIIlIlIll];end;llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IllIIIIlllIlIllIIllI+1,lllllllIIIlIl))llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];do return end;else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];end;elseif IllIIIIlllIlIllIIllI<=14 then do return end;elseif IllIIIIlllIlIllIIllI==15 then local llIlIlIIIllllIIlIllII=IlllIIllIII[2]local IllIIIIlllIlIllIIllI,IlllIIllIII=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII+1,IlllIIllIII[3])))lllllllIIIlIl=IlllIIllIII+llIlIlIIIllllIIlIllII-1 local IlllIIllIII=0;for llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII,lllllllIIIlIl do IlllIIllIII=IlllIIllIII+1;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII];end;else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);end;llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;end;end);end;return IIIIIIIllIlllllIIl(true,{},IIlIIIlIllIlllIIlI())();end)(string.byte,table.insert,setmetatable);
-	end)
-end
-coroutine.wrap(BHSOKJS_fake_script)()
-local function XJHUR_fake_script() -- FistRange.LocalScript 
-	local script = Instance.new('LocalScript', FistRange)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		LP = game.Players.LocalPlayer
-		for i,v in ipairs(LP.Character:GetDescendants()) do
-			if v:IsA("MeshPart") then v.Massless = true
-				v.CanCollide = false
-				v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-
-			end
-		end
-
-		for i,v in ipairs(game.workspace:GetDescendants()) do
-			if v:IsA("Seat") then 
-				v.Disabled = true
-			end
-		end
-		x = 35
-		y = 35
-		z = 35
-
-
-		penis = Vector3.new(x,y,z)
-
-		LP.Character.RightHand.Size = penis
-
-		LP.Character.RightHand.Transparency = 1
-		local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
-		selectionBox.Adornee = LP.Character.RightHand
-		selectionBox.Color3 = Color3.new(1,0,0)
-
-		LP.Character.LeftHand.Size = penis
-		LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
-
-		LP.Character.LeftHand.Transparency = 1
-		local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
-		selectionBox.Adornee = LP.Character.LeftHand
-		selectionBox.Color3 = Color3.new(1,0,0)
-	end)
-end
-coroutine.wrap(XJHUR_fake_script)()
-local function LWXMD_fake_script() -- WalkSpeed.LocalScript 
-	local script = Instance.new('LocalScript', WalkSpeed)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.TextBox.Text
-	end)
-end
-coroutine.wrap(LWXMD_fake_script)()
-local function AZMQ_fake_script() -- JumpPower.LocalScript 
+coroutine.wrap(IXIE_fake_script)()
+local function MYTSI_fake_script() -- JumpPower.LocalScript 
 	local script = Instance.new('LocalScript', JumpPower)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1563,13 +1631,21 @@ local function AZMQ_fake_script() -- JumpPower.LocalScript
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.TextBox.Text
 	end)
 end
-coroutine.wrap(AZMQ_fake_script)()
-local function JWXLX_fake_script() -- AutoFarm_2.ColorAnimation 
-	local script = Instance.new('LocalScript', AutoFarm_2)
+coroutine.wrap(MYTSI_fake_script)()
+local function OKEDBB_fake_script() -- WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.TextBox.Text
+	end)
+end
+coroutine.wrap(OKEDBB_fake_script)()
+local function DDKQUI_fake_script() -- AimbotTab_2.ColorAnimation 
+	local script = Instance.new('LocalScript', AimbotTab_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local h = script.Parent.Parent.Parent.Tabs
-		h.AutoFarmTab.Visible = true
+		h.AimbotTab.Visible = true
 		h.VisualsTab.Visible = false
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = false
@@ -1623,8 +1699,8 @@ local function JWXLX_fake_script() -- AutoFarm_2.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(JWXLX_fake_script)()
-local function WVWS_fake_script() -- Visuals.ColorAnimation 
+coroutine.wrap(DDKQUI_fake_script)()
+local function FWDZL_fake_script() -- Visuals.ColorAnimation 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1683,8 +1759,8 @@ local function WVWS_fake_script() -- Visuals.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(WVWS_fake_script)()
-local function KWXN_fake_script() -- Misc.ColorAnimation 
+coroutine.wrap(FWDZL_fake_script)()
+local function UOQOO_fake_script() -- Misc.ColorAnimation 
 	local script = Instance.new('LocalScript', Misc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1743,8 +1819,8 @@ local function KWXN_fake_script() -- Misc.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(KWXN_fake_script)()
-local function YKBU_fake_script() -- Cedits.ColorAnimation 
+coroutine.wrap(UOQOO_fake_script)()
+local function EAVZINM_fake_script() -- Cedits.ColorAnimation 
 	local script = Instance.new('LocalScript', Cedits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1803,8 +1879,8 @@ local function YKBU_fake_script() -- Cedits.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(YKBU_fake_script)()
-local function YWQHHFM_fake_script() -- Main.Drag 
+coroutine.wrap(EAVZINM_fake_script)()
+local function HPJGOK_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1842,4 +1918,4 @@ local function YWQHHFM_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(YWQHHFM_fake_script)()
+coroutine.wrap(HPJGOK_fake_script)()
