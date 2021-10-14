@@ -54,13 +54,23 @@ local touch_app_7 = Instance.new("ImageButton")
 local FistRange = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local touch_app_8 = Instance.new("ImageButton")
+local WalkSpeed = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local touch_app_9 = Instance.new("ImageButton")
+local TextBox = Instance.new("TextBox")
+local UICorner_13 = Instance.new("UICorner")
+local JumpPower = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local touch_app_10 = Instance.new("ImageButton")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
 local CreditsTab = Instance.new("Frame")
 local Credits = Instance.new("TextLabel")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local Credits_2 = Instance.new("TextLabel")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local TabsMenu = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local AutoFarm_2 = Instance.new("TextButton")
 local Visuals = Instance.new("TextButton")
 local Misc = Instance.new("TextButton")
@@ -536,6 +546,90 @@ touch_app_8.Image = "rbxassetid://3926305904"
 touch_app_8.ImageRectOffset = Vector2.new(84, 204)
 touch_app_8.ImageRectSize = Vector2.new(36, 36)
 
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = MiscTab
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WalkSpeed.Position = UDim2.new(0.0136750443, 0, 0.671926677, 0)
+WalkSpeed.Size = UDim2.new(0, 582, 0, 32)
+WalkSpeed.ZIndex = 10
+WalkSpeed.Font = Enum.Font.SourceSans
+WalkSpeed.Text = "       Walkspeed"
+WalkSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.TextSize = 25.000
+WalkSpeed.TextWrapped = true
+WalkSpeed.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_12.Parent = WalkSpeed
+
+touch_app_9.Name = "touch_app"
+touch_app_9.Parent = WalkSpeed
+touch_app_9.BackgroundTransparency = 1.000
+touch_app_9.LayoutOrder = 9
+touch_app_9.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_9.Size = UDim2.new(0, 20, 0, 20)
+touch_app_9.ZIndex = 2
+touch_app_9.Image = "rbxassetid://3926305904"
+touch_app_9.ImageRectOffset = Vector2.new(84, 204)
+touch_app_9.ImageRectSize = Vector2.new(36, 36)
+
+TextBox.Parent = WalkSpeed
+TextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextBox.Position = UDim2.new(0.881443322, 0, 0.1875, 0)
+TextBox.Size = UDim2.new(0, 61, 0, 20)
+TextBox.ZIndex = 15
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "..."
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_13.CornerRadius = UDim.new(0, 4)
+UICorner_13.Parent = TextBox
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = MiscTab
+JumpPower.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+JumpPower.Position = UDim2.new(0.0136750434, 0, 0.834088802, 0)
+JumpPower.Size = UDim2.new(0, 582, 0, 32)
+JumpPower.ZIndex = 10
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = "       JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextSize = 25.000
+JumpPower.TextWrapped = true
+JumpPower.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_14.Parent = JumpPower
+
+touch_app_10.Name = "touch_app"
+touch_app_10.Parent = JumpPower
+touch_app_10.BackgroundTransparency = 1.000
+touch_app_10.LayoutOrder = 9
+touch_app_10.Position = UDim2.new(0.0103093199, 0, 0.1875, 0)
+touch_app_10.Size = UDim2.new(0, 20, 0, 20)
+touch_app_10.ZIndex = 2
+touch_app_10.Image = "rbxassetid://3926305904"
+touch_app_10.ImageRectOffset = Vector2.new(84, 204)
+touch_app_10.ImageRectSize = Vector2.new(36, 36)
+
+TextBox_2.Parent = JumpPower
+TextBox_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextBox_2.Position = UDim2.new(0.881443322, 0, 0.1875, 0)
+TextBox_2.Size = UDim2.new(0, 61, 0, 20)
+TextBox_2.ZIndex = 15
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderText = "..."
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = TextBox_2
+
 CreditsTab.Name = "CreditsTab"
 CreditsTab.Parent = Tabs
 CreditsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -556,7 +650,7 @@ Credits.TextSize = 25.000
 Credits.TextWrapped = true
 Credits.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_12.Parent = Credits
+UICorner_16.Parent = Credits
 
 Credits_2.Name = "Credits"
 Credits_2.Parent = CreditsTab
@@ -571,7 +665,7 @@ Credits_2.TextSize = 25.000
 Credits_2.TextWrapped = true
 Credits_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_13.Parent = Credits_2
+UICorner_17.Parent = Credits_2
 
 TabsMenu.Name = "TabsMenu"
 TabsMenu.Parent = Main
@@ -580,7 +674,7 @@ TabsMenu.Position = UDim2.new(0.0223999992, 0, 0.12602739, 0)
 TabsMenu.Size = UDim2.new(0, 597, 0, 34)
 TabsMenu.ZIndex = 10
 
-UICorner_14.Parent = TabsMenu
+UICorner_18.Parent = TabsMenu
 
 AutoFarm_2.Name = "AutoFarm"
 AutoFarm_2.Parent = TabsMenu
@@ -650,11 +744,11 @@ Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
 
 -- Scripts:
 
-local function LKWUM_fake_script() -- Toggle.LocalScript 
+local function HNUPXN_fake_script() -- Toggle.LocalScript 
 	local script = Instance.new('LocalScript', Toggle)
 
 	local AutoFarmToggled = false
-	
+
 	script.Parent.Parent.Parent.AutoFarm.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			AutoFarmToggled = true
@@ -665,9 +759,9 @@ local function LKWUM_fake_script() -- Toggle.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if AutoFarmToggled == true then
 			repeat
 				wait()
@@ -690,9 +784,9 @@ local function LKWUM_fake_script() -- Toggle.LocalScript
 					return namecall(self, unpack(args))
 				end
 				)
-	
+
 			local LocalPlayer = game:GetService("Players").LocalPlayer
-	
+
 			function gettarget()
 				local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:wait()
 				local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
@@ -709,15 +803,15 @@ local function LKWUM_fake_script() -- Toggle.LocalScript
 				end
 				return target
 			end
-	
+
 			for i, v in pairs(workspace:GetDescendants()) do
 				if v:IsA("Seat") then
 					v:Destroy()
 				end
 			end
-	
+
 			shared.MoneyFarm = true -- Just execute shared.MoneyFarm = false to stop farming
-	
+
 			while shared.MoneyFarm do
 				wait()
 				local Target = gettarget()
@@ -753,18 +847,18 @@ local function LKWUM_fake_script() -- Toggle.LocalScript
 				wait(1)
 			end
 		end
-		
+
 		if AutoFarmToggled == false then
 			shared.MoneyFarm = false
 		end
 	end)
 end
-coroutine.wrap(LKWUM_fake_script)()
-local function BOVYBO_fake_script() -- Toggle_2.LocalScript 
+coroutine.wrap(HNUPXN_fake_script)()
+local function HWCATCK_fake_script() -- Toggle_2.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	local HospitalAutoFarmToggled = false
-	
+
 	script.Parent.Parent.Parent.HospitalAutoFarm.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			HospitalAutoFarmToggled = true
@@ -775,11 +869,11 @@ local function BOVYBO_fake_script() -- Toggle_2.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if HospitalAutoFarmToggled == true then
-	
+
 			_G.toggle = true -- if you want to turn it off change to false and re-execute
 			game:getService("RunService"):BindToRenderStep(
 			"",
@@ -828,9 +922,9 @@ local function BOVYBO_fake_script() -- Toggle_2.LocalScript
 				end
 			end
 		end
-		
+
 		if HospitalAutoFarmToggled == false then
-	
+
 			_G.toggle = false -- if you want to turn it off change to false and re-execute
 			game:getService("RunService"):BindToRenderStep(
 			"",
@@ -881,8 +975,8 @@ local function BOVYBO_fake_script() -- Toggle_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BOVYBO_fake_script)()
-local function RMVW_fake_script() -- Toggle_3.LocalScript 
+coroutine.wrap(HWCATCK_fake_script)()
+local function IOOMDL_fake_script() -- Toggle_3.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	script.Parent.Parent.Parent.Esp.MouseButton1Click:Connect(function()
@@ -890,11 +984,11 @@ local function RMVW_fake_script() -- Toggle_3.LocalScript
 		local Player = game:GetService("Players").LocalPlayer
 		local Camera = game:GetService("Workspace").CurrentCamera
 		local Mouse = Player:GetMouse()
-	
+
 		local function Dist(pointA, pointB) -- magnitude errors for some reason  : (
 			return math.sqrt(math.pow(pointA.X - pointB.X, 2) + math.pow(pointA.Y - pointB.Y, 2))
 		end
-	
+
 		local function GetClosest(points, dest)
 			local min  = math.huge 
 			local closest = nil
@@ -907,7 +1001,7 @@ local function RMVW_fake_script() -- Toggle_3.LocalScript
 			end
 			return closest
 		end
-	
+
 		local function DrawESP(plr)
 			local Box = Drawing.new("Quad")
 			Box.Visible = false
@@ -918,7 +1012,7 @@ local function RMVW_fake_script() -- Toggle_3.LocalScript
 			Box.Color = Color3.fromRGB(255, 255, 255)
 			Box.Thickness = 2
 			Box.Transparency = 1
-	
+
 			local function Update()
 				local c
 				c = game:GetService("RunService").RenderStepped:Connect(function()
@@ -947,13 +1041,13 @@ local function RMVW_fake_script() -- Toggle_3.LocalScript
 							local Right = GetClosest(points, Vector2.new(Camera.ViewportSize.X, pos.Y))
 							local Top = GetClosest(points, Vector2.new(pos.X, 0))
 							local Bottom = GetClosest(points, Vector2.new(pos.X, Camera.ViewportSize.Y))
-	
+
 							if Left ~= nil and Right ~= nil and Top ~= nil and Bottom ~= nil then
 								Box.PointA = Vector2.new(Right.X, Top.Y)
 								Box.PointB = Vector2.new(Left.X, Top.Y)
 								Box.PointC = Vector2.new(Left.X, Bottom.Y)
 								Box.PointD = Vector2.new(Right.X, Bottom.Y)
-	
+
 								Box.Visible = true
 							else 
 								Box.Visible = false
@@ -971,20 +1065,20 @@ local function RMVW_fake_script() -- Toggle_3.LocalScript
 			end
 			coroutine.wrap(Update)()
 		end
-	
+
 		for _,v in pairs(game:GetService("Players"):GetChildren()) do
 			if v.Name ~= Player.Name then 
 				DrawESP(v)
 			end
 		end
-	
+
 		game:GetService("Players").PlayerAdded:Connect(function(v)
 			DrawESP(v)
 		end)
 	end)
 end
-coroutine.wrap(RMVW_fake_script)()
-local function YHDGAEB_fake_script() -- Toggle_4.LocalScript 
+coroutine.wrap(IOOMDL_fake_script)()
+local function FEWXE_fake_script() -- Toggle_4.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_4)
 
 	script.Parent.Parent.Parent.Tracers.MouseButton1Click:Connect(function()
@@ -995,9 +1089,9 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 				return "Yes"
 			end
 		end
-	
+
 		local Find_Required = API_Check()
-	
+
 		if Find_Required == "No" then
 			game:GetService("StarterGui"):SetCore("SendNotification",{
 				Title = "Exunys Developer";
@@ -1005,51 +1099,51 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 				Duration = math.huge;
 				Button1 = "OK"
 			})
-	
+
 			return
 		end
-	
+
 		local RunService = game:GetService("RunService")
 		local Players = game:GetService("Players")
 		local Camera = game:GetService("Workspace").CurrentCamera
 		local UserInputService = game:GetService("UserInputService")
 		local TestService = game:GetService("TestService")
-	
+
 		local Typing = false
-	
+
 		_G.SendNotifications = false   -- If set to true then the script would notify you frequently on any changes applied and when loaded / errored. (If a game can detect this, it is recommended to set it to false)
 		_G.DefaultSettings = false   -- If set to true then the tracer script would run with default settings regardless of any changes you made.
-	
+
 		_G.TeamCheck = false   -- If set to true then the script would create tracers only for the enemy team members.
-	
+
 		--[!]-- ONLY ONE OF THESE VALUES SHOULD BE SET TO TRUE TO NOT ERROR THE SCRIPT --[!]--
-	
+
 		_G.FromMouse = false   -- If set to true, the tracers will come from the position of your mouse curson on your screen.
 		_G.FromCenter = false   -- If set to true, the tracers will come from the center of your screen.
 		_G.FromBottom = true   -- If set to true, the tracers will come from the bottom of your screen.
-	
+
 		_G.TracersVisible = true   -- If set to true then the tracers will be visible and vice versa.
 		_G.TracerColor = Color3.fromRGB(255, 80, 10)   -- The color that the tracers would appear as.
 		_G.TracerThickness = 1   -- The thickness of the tracers.
 		_G.TracerTransparency = 0.7   -- The transparency of the tracers.
-	
+
 		_G.ModeSkipKey = Enum.KeyCode.E   -- The key that changes between modes that indicate where will the tracers come from.
 		_G.DisableKey = Enum.KeyCode.Q   -- The key that disables / enables the tracers.
-	
+
 		local function CreateTracers()
 			for _, v in next, Players:GetPlayers() do
 				if v.Name ~= game.Players.LocalPlayer.Name then
 					local TracerLine = Drawing.new("Line")
-	
+
 					RunService.RenderStepped:Connect(function()
 						if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
 							local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
 							local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
-	
+
 							TracerLine.Thickness = _G.TracerThickness
 							TracerLine.Transparency = _G.TracerTransparency
 							TracerLine.Color = _G.TracerColor
-	
+
 							if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
 								TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
 							elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
@@ -1057,7 +1151,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 							elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
 								TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
 							end
-	
+
 							if OnScreen == true  then
 								TracerLine.To = Vector2.new(Vector.X, Vector.Y)
 								if _G.TeamCheck == true then 
@@ -1076,27 +1170,27 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 							TracerLine.Visible = false
 						end
 					end)
-	
+
 					Players.PlayerRemoving:Connect(function()
 						TracerLine.Visible = false
 					end)
 				end
 			end
-	
+
 			Players.PlayerAdded:Connect(function(Player)
 				Player.CharacterAdded:Connect(function(v)
 					if v.Name ~= game.Players.LocalPlayer.Name then
 						local TracerLine = Drawing.new("Line")
-	
+
 						RunService.RenderStepped:Connect(function()
 							if workspace:FindFirstChild(v.Name) ~= nil and workspace[v.Name]:FindFirstChild("HumanoidRootPart") ~= nil then
 								local HumanoidRootPart_Position, HumanoidRootPart_Size = workspace[v.Name].HumanoidRootPart.CFrame, workspace[v.Name].HumanoidRootPart.Size * 1
 								local Vector, OnScreen = Camera:WorldToViewportPoint(HumanoidRootPart_Position * CFrame.new(0, -HumanoidRootPart_Size.Y, 0).p)
-	
+
 								TracerLine.Thickness = _G.TracerThickness
 								TracerLine.Transparency = _G.TracerTransparency
 								TracerLine.Color = _G.TracerColor
-	
+
 								if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false then
 									TracerLine.From = Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y)
 								elseif _G.FromMouse == false and _G.FromCenter == true and _G.FromBottom == false then
@@ -1104,7 +1198,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 								elseif _G.FromMouse == false and _G.FromCenter == false and _G.FromBottom == true then
 									TracerLine.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
 								end
-	
+
 								if OnScreen == true  then
 									TracerLine.To = Vector2.new(Vector.X, Vector.Y)
 									if _G.TeamCheck == true then 
@@ -1123,7 +1217,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 								TracerLine.Visible = false
 							end
 						end)
-	
+
 						Players.PlayerRemoving:Connect(function()
 							TracerLine.Visible = false
 						end)
@@ -1131,22 +1225,22 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 				end)
 			end)
 		end
-	
+
 		UserInputService.TextBoxFocused:Connect(function()
 			Typing = true
 		end)
-	
+
 		UserInputService.TextBoxFocusReleased:Connect(function()
 			Typing = false
 		end)
-	
+
 		UserInputService.InputBegan:Connect(function(Input)
 			if Input.KeyCode == _G.ModeSkipKey and Typing == false then
 				if _G.FromMouse == true and _G.FromCenter == false and _G.FromBottom == false and _G.TracersVisible == true then
 					_G.FromCenter = false
 					_G.FromBottom = true
 					_G.FromMouse = false
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1158,7 +1252,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 					_G.FromCenter = true
 					_G.FromBottom = false
 					_G.FromMouse = false
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1170,7 +1264,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 					_G.FromCenter = false
 					_G.FromBottom = false
 					_G.FromMouse = true
-	
+
 					if _G.SendNotifications == true then
 						game:GetService("StarterGui"):SetCore("SendNotification",{
 							Title = "Exunys Developer";
@@ -1181,7 +1275,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 				end
 			elseif Input.KeyCode == _G.DisableKey and Typing == false then
 				_G.TracersVisible = not _G.TracersVisible
-	
+
 				if _G.SendNotifications == true then
 					game:GetService("StarterGui"):SetCore("SendNotification",{
 						Title = "Exunys Developer";
@@ -1191,7 +1285,7 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 				end
 			end
 		end)
-	
+
 		if _G.DefaultSettings == true then
 			_G.TeamCheck = false
 			_G.FromMouse = false
@@ -1204,11 +1298,11 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 			_G.ModeSkipKey = Enum.KeyCode.E
 			_G.DisableKey = Enum.KeyCode.Q
 		end
-	
+
 		local Success, Errored = pcall(function()
 			CreateTracers()
 		end)
-	
+
 		if Success and not Errored then
 			if _G.SendNotifications == true then
 				game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -1231,12 +1325,12 @@ local function YHDGAEB_fake_script() -- Toggle_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YHDGAEB_fake_script)()
-local function TJMPGHU_fake_script() -- Toggle_5.LocalScript 
+coroutine.wrap(FEWXE_fake_script)()
+local function WLUQWR_fake_script() -- Toggle_5.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_5)
 
 	local FlyToggled = false
-	
+
 	script.Parent.Parent.Parent.Fly.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			FlyToggled = true
@@ -1247,13 +1341,13 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if FlyToggled == true then
 			_G.FLYING = true
 		end
-		
+
 		if FlyToggled == false then
 			_G.FLYING = false
 			LP.Character.Humanoid.PlatformStand = true
@@ -1272,7 +1366,7 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 			end
 			BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
 		end
-		
+
 		_G.FLYING = false
 		local LP = game:service('Players').LocalPlayer
 		local T = LP.Character.UpperTorso
@@ -1280,8 +1374,8 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
 		local SPEED = 5
 		local MOUSE = LP:GetMouse()
-	
-	
+
+
 		local function FLY()
 			_G.FLYING = true
 			local BG = Instance.new('BodyGyro', T)
@@ -1291,8 +1385,8 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 			BG.cframe = T.CFrame
 			BV.velocity = Vector3.new(0, 0.1, 0)
 			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
-	
-	
+
+
 			spawn(function()
 				repeat wait()
 					LP.Character.Humanoid.PlatformStand = true
@@ -1319,7 +1413,7 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 				LP.Character.Humanoid.PlatformStand = false
 			end)
 		end
-	
+
 		MOUSE.KeyDown:connect(function(KEY)
 			if KEY:lower() == 'w' then
 				CONTROL.F = 1
@@ -1331,7 +1425,7 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 				CONTROL.R = 1
 			end
 		end)
-	
+
 		MOUSE.KeyUp:connect(function(KEY)
 			if KEY:lower() == 'w' then
 				CONTROL.F = 0
@@ -1343,19 +1437,19 @@ local function TJMPGHU_fake_script() -- Toggle_5.LocalScript
 				CONTROL.R = 0
 			end
 		end)
-	
-	
-	
-	
+
+
+
+
 		FLY()
 	end)
 end
-coroutine.wrap(TJMPGHU_fake_script)()
-local function WLMWSHY_fake_script() -- Toggle_6.LocalScript 
+coroutine.wrap(WLUQWR_fake_script)()
+local function SQFGWYX_fake_script() -- Toggle_6.LocalScript 
 	local script = Instance.new('LocalScript', Toggle_6)
 
 	local NoclipToggled = false
-	
+
 	script.Parent.Parent.Parent.Noclip.MouseButton1Click:Connect(function()
 		if script.Parent.On.Visible == false then
 			NoclipToggled = true
@@ -1366,12 +1460,12 @@ local function WLMWSHY_fake_script() -- Toggle_6.LocalScript
 			script.Parent.On.Visible = false
 			script.Parent.Off.Visible = true
 		end
-		
+
 		wait()
-		
+
 		if NoclipToggled == true then
 			nam = game.Players.LocalPlayer.Name
-			
+
 			game:GetService('RunService').Stepped:connect(function()
 				for a, b in pairs(game.Workspace:GetChildren()) do
 					if b.Name == nam then
@@ -1384,10 +1478,10 @@ local function WLMWSHY_fake_script() -- Toggle_6.LocalScript
 				end
 			end)
 		end
-		
+
 		if NoclipToggled == false then
 			nam = game.Players.LocalPlayer.Name
-	
+
 			game:GetService('RunService').Stepped:connect(function()
 				for a, b in pairs(game.Workspace:GetChildren()) do
 					if b.Name == nam then
@@ -1402,16 +1496,16 @@ local function WLMWSHY_fake_script() -- Toggle_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WLMWSHY_fake_script)()
-local function KAZOF_fake_script() -- EscapePrison.LocalScript 
+coroutine.wrap(SQFGWYX_fake_script)()
+local function BHSOKJS_fake_script() -- EscapePrison.LocalScript 
 	local script = Instance.new('LocalScript', EscapePrison)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		return(function(IlIllIllII,IlllIIllIII,IlllIIllIII)local lllllIIIllllllIl=string.char;local lllllllIIIlIl=string.sub;local IIIIIIIllIlllllIIl=table.concat;local IlIlIIIII=math.ldexp;local IIlIIIlIllIlllIIlI=getfenv or function()return _ENV end;local IlIlIlIIlllIIIIlIlIlllIl=select;local lIlIIlllIIIlIllIlIIIlIlI=unpack or table.unpack;local llIIIIllIlllIIIllIIllIl=tonumber;local function IIIIIlIIlllIlIIlIIIIllI(lllllIllIIlIlIll)local IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII,IllIIIIlllIlIllIIllI="","",{}local lIlllIlIIlllIIl=256;local lIlIIlllIIIlIllIlIIIlIlI={}for IlllIIllIII=0,lIlllIlIIlllIIl-1 do lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]=lllllIIIllllllIl(IlllIIllIII)end;local IlllIIllIII=1;local function IlIllIllII()local IlllIIIlIllllIlIIIIIlIlII=llIIIIllIlllIIIllIIllIl(lllllllIIIlIl(lllllIllIIlIlIll,IlllIIllIII,IlllIIllIII),36)IlllIIllIII=IlllIIllIII+1;local llIlIlIIIllllIIlIllII=llIIIIllIlllIIIllIIllIl(lllllllIIIlIl(lllllIllIIlIlIll,IlllIIllIII,IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII-1),36)IlllIIllIII=IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII;return llIlIlIIIllllIIlIllII end;IlllIIIlIllllIlIIIIIlIlII=lllllIIIllllllIl(IlIllIllII())IllIIIIlllIlIllIIllI[1]=IlllIIIlIllllIlIIIIIlIlII;while IlllIIllIII<#lllllIllIIlIlIll do local IlllIIllIII=IlIllIllII()if lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]then llIlIlIIIllllIIlIllII=lIlIIlllIIIlIllIlIIIlIlI[IlllIIllIII]else llIlIlIIIllllIIlIllII=IlllIIIlIllllIlIIIIIlIlII..lllllllIIIlIl(IlllIIIlIllllIlIIIIIlIlII,1,1)end;lIlIIlllIIIlIllIlIIIlIlI[lIlllIlIIlllIIl]=IlllIIIlIllllIlIIIIIlIlII..lllllllIIIlIl(llIlIlIIIllllIIlIllII,1,1)IllIIIIlllIlIllIIllI[#IllIIIIlllIlIllIIllI+1],IlllIIIlIllllIlIIIIIlIlII,lIlllIlIIlllIIl=llIlIlIIIllllIIlIllII,llIlIlIIIllllIIlIllII,lIlllIlIIlllIIl+1 end;return table.concat(IllIIIIlllIlIllIIllI)end;local llIIIIllIlllIIIllIIllIl=IIIIIlIIlllIlIIlIIIIllI('22L22H27522G22B27522H21H21I21K21P21621921721C21J21Q22G27427521Q21K21G21O22G22M2791H2192192151U21O21922G23C27921D27W21521622R23A23A21521K27F21O21N27I23B21M21I21G23A21721K21A23A1J21A22W1F21A22X21K1L22827922322C27922G29027622H22J27923D29629422I22H22327529D27M27922H27429429J22H29429I29N27529829N29429M29J29W29N');local IlllIIllIII=(bit or bit32);local IllIIIIlllIlIllIIllI=IlllIIllIII and IlllIIllIII.bxor or function(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII)local llIlIlIIIllllIIlIllII,IllIIIIlllIlIllIIllI,lllllllIIIlIl=1,0,10 while IlllIIllIII>0 and IlllIIIlIllllIlIIIIIlIlII>0 do local lllllllIIIlIl,lIlllIlIIlllIIl=IlllIIllIII%2,IlllIIIlIllllIlIIIIIlIlII%2 if lllllllIIIlIl~=lIlllIlIIlllIIl then IllIIIIlllIlIllIIllI=IllIIIIlllIlIllIIllI+llIlIlIIIllllIIlIllII end IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII=(IlllIIllIII-lllllllIIIlIl)/2,(IlllIIIlIllllIlIIIIIlIlII-lIlllIlIIlllIIl)/2,llIlIlIIIllllIIlIllII*2 end if IlllIIllIII<IlllIIIlIllllIlIIIIIlIlII then IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII end while IlllIIllIII>0 do local IlllIIIlIllllIlIIIIIlIlII=IlllIIllIII%2 if IlllIIIlIllllIlIIIIIlIlII>0 then IllIIIIlllIlIllIIllI=IllIIIIlllIlIllIIllI+llIlIlIIIllllIIlIllII end IlllIIllIII,llIlIlIIIllllIIlIllII=(IlllIIllIII-IlllIIIlIllllIlIIIIIlIlII)/2,llIlIlIIIllllIIlIllII*2 end return IllIIIIlllIlIllIIllI end local function llIlIlIIIllllIIlIllII(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII,llIlIlIIIllllIIlIllII)if llIlIlIIIllllIIlIllII then local IlllIIllIII=(IlllIIIlIllllIlIIIIIlIlII/2^(IlllIIllIII-1))%2^((llIlIlIIIllllIIlIllII-1)-(IlllIIllIII-1)+1);return IlllIIllIII-IlllIIllIII%1;else local IlllIIllIII=2^(IlllIIllIII-1);return(IlllIIIlIllllIlIIIIIlIlII%(IlllIIllIII+IlllIIllIII)>=IlllIIllIII)and 1 or 0;end;end;local IlllIIllIII=1;local function IlllIIIlIllllIlIIIIIlIlII()local IlllIIIlIllllIlIIIIIlIlII,lIlllIlIIlllIIl,llIlIlIIIllllIIlIllII,lllllllIIIlIl=IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+3);IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlllIIIlIllllIlIIIIIlIlII,89)lIlllIlIIlllIIl=IllIIIIlllIlIllIIllI(lIlllIlIIlllIIl,89)llIlIlIIIllllIIlIllII=IllIIIIlllIlIllIIllI(llIlIlIIIllllIIlIllII,89)lllllllIIIlIl=IllIIIIlllIlIllIIllI(lllllllIIIlIl,89)IlllIIllIII=IlllIIllIII+4;return(lllllllIIIlIl*16777216)+(llIlIlIIIllllIIlIllII*65536)+(lIlllIlIIlllIIl*256)+IlllIIIlIllllIlIIIIIlIlII;end;local function lllllIllIIlIlIll()local IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII),89);IlllIIllIII=IlllIIllIII+1;return IlllIIIlIllllIlIIIIIlIlII;end;local function lIlllIlIIlllIIl()local IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII=IlIllIllII(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+2);IlllIIIlIllllIlIIIIIlIlII=IllIIIIlllIlIllIIllI(IlllIIIlIllllIlIIIIIlIlII,89)llIlIlIIIllllIIlIllII=IllIIIIlllIlIllIIllI(llIlIlIIIllllIIlIllII,89)IlllIIllIII=IlllIIllIII+2;return(llIlIlIIIllllIIlIllII*256)+IlllIIIlIllllIlIIIIIlIlII;end;local function IIIIIlIIlllIlIIlIIIIllI()local IllIIIIlllIlIllIIllI=IlllIIIlIllllIlIIIIIlIlII();local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII();local lllllllIIIlIl=1;local IllIIIIlllIlIllIIllI=(llIlIlIIIllllIIlIllII(IlllIIllIII,1,20)*(2^32))+IllIIIIlllIlIllIIllI;local IlllIIIlIllllIlIIIIIlIlII=llIlIlIIIllllIIlIllII(IlllIIllIII,21,31);local IlllIIllIII=((-1)^llIlIlIIIllllIIlIllII(IlllIIllIII,32));if(IlllIIIlIllllIlIIIIIlIlII==0)then if(IllIIIIlllIlIllIIllI==0)then return IlllIIllIII*0;else IlllIIIlIllllIlIIIIIlIlII=1;lllllllIIIlIl=0;end;elseif(IlllIIIlIllllIlIIIIIlIlII==2047)then return(IllIIIIlllIlIllIIllI==0)and(IlllIIllIII*(1/0))or(IlllIIllIII*(0/0));end;return IlIlIIIII(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII-1023)*(lllllllIIIlIl+(IllIIIIlllIlIllIIllI/(2^52)));end;local IlIlIIIII=IlllIIIlIllllIlIIIIIlIlII;local function IIlIIlIlIlIIIIIIlIlllI(IlllIIIlIllllIlIIIIIlIlII)local llIlIlIIIllllIIlIllII;if(not IlllIIIlIllllIlIIIIIlIlII)then IlllIIIlIllllIlIIIIIlIlII=IlIlIIIII();if(IlllIIIlIllllIlIIIIIlIlII==0)then return'';end;end;llIlIlIIIllllIIlIllII=lllllllIIIlIl(llIIIIllIlllIIIllIIllIl,IlllIIllIII,IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII-1);IlllIIllIII=IlllIIllIII+IlllIIIlIllllIlIIIIIlIlII;local IlllIIIlIllllIlIIIIIlIlII={}for IlllIIllIII=1,#llIlIlIIIllllIIlIllII do IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=lllllIIIllllllIl(IllIIIIlllIlIllIIllI(IlIllIllII(lllllllIIIlIl(llIlIlIIIllllIIlIllII,IlllIIllIII,IlllIIllIII)),89))end return IIIIIIIllIlllllIIl(IlllIIIlIllllIlIIIIIlIlII);end;local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII;local function IlIlIIIII(...)return{...},IlIlIlIIlllIIIIlIlIlllIl('#',...)end local function lllllIIIllllllIl()local IlIllIllII={};local llIIIIllIlllIIIllIIllIl={};local IlllIIllIII={};local IlIlIlIIlllIIIIlIlIlllIl={[#{"1 + 1 = 111";"1 + 1 = 111";}]=llIIIIllIlllIIIllIIllIl,[#{{916;203;180;55};"1 + 1 = 111";"1 + 1 = 111";}]=nil,[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]=IlllIIllIII,[#{"1 + 1 = 111";}]=IlIllIllII,};local IlllIIllIII=IlllIIIlIllllIlIIIIIlIlII()local lllllllIIIlIl={}for llIlIlIIIllllIIlIllII=1,IlllIIllIII do local IlllIIIlIllllIlIIIIIlIlII=lllllIllIIlIlIll();local IlllIIllIII;if(IlllIIIlIllllIlIIIIIlIlII==0)then IlllIIllIII=(lllllIllIIlIlIll()~=0);elseif(IlllIIIlIllllIlIIIIIlIlII==2)then IlllIIllIII=IIIIIlIIlllIlIIlIIIIllI();elseif(IlllIIIlIllllIlIIIIIlIlII==1)then IlllIIllIII=IIlIIlIlIlIIIIIIlIlllI();end;lllllllIIIlIl[llIlIlIIIllllIIlIllII]=IlllIIllIII;end;for llIIIIllIlllIIIllIIllIl=1,IlllIIIlIllllIlIIIIIlIlII()do local IlllIIllIII=lllllIllIIlIlIll();if(llIlIlIIIllllIIlIllII(IlllIIllIII,1,1)==0)then local IllIIIIlllIlIllIIllI=llIlIlIIIllllIIlIllII(IlllIIllIII,2,3);local lIlIIlllIIIlIllIlIIIlIlI=llIlIlIIIllllIIlIllII(IlllIIllIII,4,6);local IlllIIllIII={lIlllIlIIlllIIl(),lIlllIlIIlllIIl(),nil,nil};if(IllIIIIlllIlIllIIllI==0)then IlllIIllIII[3]=lIlllIlIIlllIIl();IlllIIllIII[4]=lIlllIlIIlllIIl();elseif(IllIIIIlllIlIllIIllI==1)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII();elseif(IllIIIIlllIlIllIIllI==2)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII()-(2^16)elseif(IllIIIIlllIlIllIIllI==3)then IlllIIllIII[3]=IlllIIIlIllllIlIIIIIlIlII()-(2^16)IlllIIllIII[4]=lIlllIlIIlllIIl();end;if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,1,1)==1)then IlllIIllIII[2]=lllllllIIIlIl[IlllIIllIII[2]]end if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,2,2)==1)then IlllIIllIII[3]=lllllllIIIlIl[IlllIIllIII[3]]end if(llIlIlIIIllllIIlIllII(lIlIIlllIIIlIllIlIIIlIlI,3,3)==1)then IlllIIllIII[4]=lllllllIIIlIl[IlllIIllIII[4]]end IlIllIllII[llIIIIllIlllIIIllIIllIl]=IlllIIllIII;end end;for IlllIIllIII=1,IlllIIIlIllllIlIIIIIlIlII()do llIIIIllIlllIIIllIIllIl[IlllIIllIII-1]=lllllIIIllllllIl();end;IlIlIlIIlllIIIIlIlIlllIl[3]=lllllIllIIlIlIll();return IlIlIlIIlllIIIIlIlIlllIl;end;local function IIIIIIIllIlllllIIl(IlllIIllIII,IlllIIIlIllllIlIIIIIlIlII,IlIllIllII)IlllIIllIII=(IlllIIllIII==true and lllllIIIllllllIl())or IlllIIllIII;return(function(...)local lIlllIlIIlllIIl=IlllIIllIII[1];local IllIIIIlllIlIllIIllI=IlllIIllIII[3];local IlllIIllIII=IlllIIllIII[2];local llIIIIllIlllIIIllIIllIl=IlIlIIIII local llIlIlIIIllllIIlIllII=1;local lllllllIIIlIl=-1;local IIIIIlIIlllIlIIlIIIIllI={};local lllllIIIllllllIl={...};local lllllIllIIlIlIll=IlIlIlIIlllIIIIlIlIlllIl('#',...)-1;local IlllIIllIII={};local IlllIIIlIllllIlIIIIIlIlII={};for IlllIIllIII=0,lllllIllIIlIlIll do if(IlllIIllIII>=IllIIIIlllIlIllIIllI)then IIIIIlIIlllIlIIlIIIIllI[IlllIIllIII-IllIIIIlllIlIllIIllI]=lllllIIIllllllIl[IlllIIllIII+1];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=lllllIIIllllllIl[IlllIIllIII+#{{310;347;720;236};}];end;end;local IlllIIllIII=lllllIllIIlIlIll-IllIIIIlllIlIllIIllI+1 local IlllIIllIII;local IllIIIIlllIlIllIIllI;while true do IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[1];if IllIIIIlllIlIllIIllI<=7 then if IllIIIIlllIlIllIIllI<=3 then if IllIIIIlllIlIllIIllI<=1 then if IllIIIIlllIlIllIIllI>0 then local IllIIIIlllIlIllIIllI=IlllIIllIII[2];local llIlIlIIIllllIIlIllII=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI+1]=llIlIlIIIllllIIlIllII;IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=llIlIlIIIllllIIlIllII[IlllIIllIII[4]];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];end;elseif IllIIIIlllIlIllIIllI>2 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);end;elseif IllIIIIlllIlIllIIllI<=5 then if IllIIIIlllIlIllIIllI>4 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];else do return end;end;elseif IllIIIIlllIlIllIIllI>6 then local IlllIIllIII=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII+1,lllllllIIIlIl))else local IlllIIllIII=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IlllIIllIII+1,lllllllIIIlIl))end;elseif IllIIIIlllIlIllIIllI<=11 then if IllIIIIlllIlIllIIllI<=9 then if IllIIIIlllIlIllIIllI>8 then local llIlIlIIIllllIIlIllII=IlllIIllIII[2];local IllIIIIlllIlIllIIllI=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII+1]=IllIIIIlllIlIllIIllI;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII[4]];else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();end;elseif IllIIIIlllIlIllIIllI==10 then IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();else local llIlIlIIIllllIIlIllII=IlllIIllIII[2]local IllIIIIlllIlIllIIllI,IlllIIllIII=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII+1,IlllIIllIII[3])))lllllllIIIlIl=IlllIIllIII+llIlIlIIIllllIIlIllII-1 local IlllIIllIII=0;for llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII,lllllllIIIlIl do IlllIIllIII=IlllIIllIII+1;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII];end;end;elseif IllIIIIlllIlIllIIllI<=13 then if IllIIIIlllIlIllIIllI>12 then local lllllIllIIlIlIll;local IIIIIlIIlllIlIIlIIIIllI,IlIlIlIIlllIIIIlIlIlllIl;local lllllIIIllllllIl;local IllIIIIlllIlIllIIllI;IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlIllIllII[IlllIIllIII[3]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2];lllllIIIllllllIl=IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[3]];IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI+1]=lllllIIIllllllIl;IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=lllllIIIllllllIl[IlllIIllIII[4]];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2]IIIIIlIIlllIlIIlIIIIllI,IlIlIlIIlllIIIIlIlIlllIl=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IllIIIIlllIlIllIIllI+1,IlllIIllIII[3])))lllllllIIIlIl=IlIlIlIIlllIIIIlIlIlllIl+IllIIIIlllIlIllIIllI-1 lllllIllIIlIlIll=0;for IlllIIllIII=IllIIIIlllIlIllIIllI,lllllllIIIlIl do lllllIllIIlIlIll=lllllIllIIlIlIll+1;IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII]=IIIIIlIIlllIlIIlIIIIllI[lllllIllIIlIlIll];end;llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IllIIIIlllIlIllIIllI=IlllIIllIII[2]IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI]=IlllIIIlIllllIlIIIIIlIlII[IllIIIIlllIlIllIIllI](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,IllIIIIlllIlIllIIllI+1,lllllllIIIlIl))llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]();llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;IlllIIllIII=lIlllIlIIlllIIl[llIlIlIIIllllIIlIllII];do return end;else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=IlllIIllIII[3];end;elseif IllIIIIlllIlIllIIllI<=14 then do return end;elseif IllIIIIlllIlIllIIllI==15 then local llIlIlIIIllllIIlIllII=IlllIIllIII[2]local IllIIIIlllIlIllIIllI,IlllIIllIII=llIIIIllIlllIIIllIIllIl(IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII](lIlIIlllIIIlIllIlIIIlIlI(IlllIIIlIllllIlIIIIIlIlII,llIlIlIIIllllIIlIllII+1,IlllIIllIII[3])))lllllllIIIlIl=IlllIIllIII+llIlIlIIIllllIIlIllII-1 local IlllIIllIII=0;for llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII,lllllllIIIlIl do IlllIIllIII=IlllIIllIII+1;IlllIIIlIllllIlIIIIIlIlII[llIlIlIIIllllIIlIllII]=IllIIIIlllIlIllIIllI[IlllIIllIII];end;else IlllIIIlIllllIlIIIIIlIlII[IlllIIllIII[2]]=(IlllIIllIII[3]~=0);end;llIlIlIIIllllIIlIllII=llIlIlIIIllllIIlIllII+1;end;end);end;return IIIIIIIllIlllllIIl(true,{},IIlIIIlIllIlllIIlI())();end)(string.byte,table.insert,setmetatable);
 	end)
 end
-coroutine.wrap(KAZOF_fake_script)()
-local function VLWHU_fake_script() -- FistRange.LocalScript 
+coroutine.wrap(BHSOKJS_fake_script)()
+local function XJHUR_fake_script() -- FistRange.LocalScript 
 	local script = Instance.new('LocalScript', FistRange)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1420,10 +1514,10 @@ local function VLWHU_fake_script() -- FistRange.LocalScript
 			if v:IsA("MeshPart") then v.Massless = true
 				v.CanCollide = false
 				v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
-	
+
 			end
 		end
-	
+
 		for i,v in ipairs(game.workspace:GetDescendants()) do
 			if v:IsA("Seat") then 
 				v.Disabled = true
@@ -1432,28 +1526,45 @@ local function VLWHU_fake_script() -- FistRange.LocalScript
 		x = 35
 		y = 35
 		z = 35
-	
-	
+
+
 		penis = Vector3.new(x,y,z)
-	
+
 		LP.Character.RightHand.Size = penis
-	
+
 		LP.Character.RightHand.Transparency = 1
 		local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
 		selectionBox.Adornee = LP.Character.RightHand
 		selectionBox.Color3 = Color3.new(1,0,0)
-	
+
 		LP.Character.LeftHand.Size = penis
 		LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
-	
+
 		LP.Character.LeftHand.Transparency = 1
 		local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
 		selectionBox.Adornee = LP.Character.LeftHand
 		selectionBox.Color3 = Color3.new(1,0,0)
 	end)
 end
-coroutine.wrap(VLWHU_fake_script)()
-local function QLHOSGH_fake_script() -- AutoFarm_2.ColorAnimation 
+coroutine.wrap(XJHUR_fake_script)()
+local function LWXMD_fake_script() -- WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.TextBox.Text
+	end)
+end
+coroutine.wrap(LWXMD_fake_script)()
+local function AZMQ_fake_script() -- JumpPower.LocalScript 
+	local script = Instance.new('LocalScript', JumpPower)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.UseJumpPower = true
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.TextBox.Text
+	end)
+end
+coroutine.wrap(AZMQ_fake_script)()
+local function JWXLX_fake_script() -- AutoFarm_2.ColorAnimation 
 	local script = Instance.new('LocalScript', AutoFarm_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1463,7 +1574,7 @@ local function QLHOSGH_fake_script() -- AutoFarm_2.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1487,7 +1598,7 @@ local function QLHOSGH_fake_script() -- AutoFarm_2.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1512,8 +1623,8 @@ local function QLHOSGH_fake_script() -- AutoFarm_2.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(QLHOSGH_fake_script)()
-local function CZOZR_fake_script() -- Visuals.ColorAnimation 
+coroutine.wrap(JWXLX_fake_script)()
+local function WVWS_fake_script() -- Visuals.ColorAnimation 
 	local script = Instance.new('LocalScript', Visuals)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1523,7 +1634,7 @@ local function CZOZR_fake_script() -- Visuals.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1547,7 +1658,7 @@ local function CZOZR_fake_script() -- Visuals.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1572,8 +1683,8 @@ local function CZOZR_fake_script() -- Visuals.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(CZOZR_fake_script)()
-local function YTZZ_fake_script() -- Misc.ColorAnimation 
+coroutine.wrap(WVWS_fake_script)()
+local function KWXN_fake_script() -- Misc.ColorAnimation 
 	local script = Instance.new('LocalScript', Misc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1583,7 +1694,7 @@ local function YTZZ_fake_script() -- Misc.ColorAnimation
 		h.MiscTab.Visible = true
 		h.CreditsTab.Visible = false
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1607,7 +1718,7 @@ local function YTZZ_fake_script() -- Misc.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1632,8 +1743,8 @@ local function YTZZ_fake_script() -- Misc.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(YTZZ_fake_script)()
-local function XHIL_fake_script() -- Cedits.ColorAnimation 
+coroutine.wrap(KWXN_fake_script)()
+local function YKBU_fake_script() -- Cedits.ColorAnimation 
 	local script = Instance.new('LocalScript', Cedits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1643,7 +1754,7 @@ local function XHIL_fake_script() -- Cedits.ColorAnimation
 		h.MiscTab.Visible = false
 		h.CreditsTab.Visible = true
 	end)
-	
+
 	script.Parent.MouseEnter:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 		wait()
@@ -1667,7 +1778,7 @@ local function XHIL_fake_script() -- Cedits.ColorAnimation
 		wait()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		script.Parent.TextColor3 = Color3.fromRGB(255, 255, 255)
 		wait()
@@ -1692,8 +1803,8 @@ local function XHIL_fake_script() -- Cedits.ColorAnimation
 		script.Parent.TextColor3 = Color3.fromRGB(207, 207, 207)
 	end)
 end
-coroutine.wrap(XHIL_fake_script)()
-local function UQJNYSA_fake_script() -- Main.Drag 
+coroutine.wrap(YKBU_fake_script)()
+local function YWQHHFM_fake_script() -- Main.Drag 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1702,14 +1813,14 @@ local function UQJNYSA_fake_script() -- Main.Drag
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -1722,7 +1833,7 @@ local function UQJNYSA_fake_script() -- Main.Drag
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -1731,4 +1842,4 @@ local function UQJNYSA_fake_script() -- Main.Drag
 		end
 	end)
 end
-coroutine.wrap(UQJNYSA_fake_script)()
+coroutine.wrap(YWQHHFM_fake_script)()
