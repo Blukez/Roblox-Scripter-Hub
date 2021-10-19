@@ -102,7 +102,7 @@ local function AJWFXXP_fake_script() -- GameTitle.GameDetectScript
 		script.Parent.Text = "Da Hood"
 	end
 	
-	if game.PlaceId == 7549229959 then
+	if game.PlaceId == 7553566159 then
 		script.Parent.Text = "Squid Game"
 	end
 end
