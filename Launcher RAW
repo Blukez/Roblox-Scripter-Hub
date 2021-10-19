@@ -278,7 +278,7 @@ local function VWYXEL_fake_script() -- Main.AnimationManager
 	wait(.04)
 	GAMESECTION.GameTitle.TextTransparency = 0
 
-	script.Parent.Game.Load.MouseButton1Click:Connect(function()
+	script.Parent.Gamee.Load.MouseButton1Click:Connect(function()
 		GAMESECTION.Load.BackgroundTransparency = 0
 		wait(.00001)
 		GAMESECTION.Load.BackgroundTransparency = .1
