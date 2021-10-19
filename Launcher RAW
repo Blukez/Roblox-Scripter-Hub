@@ -18,7 +18,7 @@ local UICorner_3 = Instance.new("UICorner")
 
 RobloxScripterHubLauncher.Name = "RobloxScripterHubLauncher"
 RobloxScripterHubLauncher.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-RobloxScripterHubLauncher.Enabled = false
+RobloxScripterHubLauncher.Enabled = true
 RobloxScripterHubLauncher.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
