@@ -105,6 +105,10 @@ local function AJWFXXP_fake_script() -- GameTitle.GameDetectScript
 	if game.PlaceId == 7553566159 then
 		script.Parent.Text = "Squid Game"
 	end
+	
+	if game.PlaceId == 1962086868 then
+		script.Parent.Text = "Tower Of Hell"
+	end
 end
 coroutine.wrap(AJWFXXP_fake_script)()
 local function VWYXEL_fake_script() -- Main.AnimationManager 
@@ -453,5 +457,11 @@ end)
 Load.MouseButton1Click:Connect(function()
 	if GameTitle.Text == "Squid Game" then
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Squid%20Game"))()
+	end
+end)
+
+Load.MouseButton1Click:Connect(function()
+	if GameTitle.Text == "Tower Of Hell" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Blukez/Roblox-Scripter-Hub/Main/Tower%20Of%20Hell"))()
 	end
 end)
